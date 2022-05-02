@@ -25,3 +25,43 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+REQUISITOS:
+Angular Instalado;
+GitBash Instalado;
+
+INSTALANDO O PROJETO
+- Para usar "pull" nos arquivos, abra seu bash no diretório desejado e execute os seguintes comandos:
+1 - git init
+2 - git remote add origin https://github.com/matheus-paiva/Testes-Squad-2.git
+3 - git pull https://github.com/matheus-paiva/Testes-Squad-2.git master
+
+USANDO COMMITS
+- Depois de fazer o passo anterior, use os seguintes comandos no seu bash:
+1 - npm install commitizen -g
+- Se ocorrer alguma vulnerabilidade, use "npm audit fix --force" sem as aspas para continuar, o bash também o guiará com essas vulnerabilidades
+2 - commitizen init cz-conventional-changelog --save-dev --save-exact
+- Se ocorrer algum erro, coloque "--force" sem as aspas no final do comando e continue
+3 - npm run commit
+- Depois disso, você também pode iniciar um commit com "git-cz" ou "cz" sem as aspas que funcionará
+SE ALGO DER ERRADO, ESCOLHAR UM DEUS E REZE
+
+REQUIREMENTS
+Angular installed;
+GitBash installed;
+
+INSTALLING THE PROJECT
+- To pull the archives, open your bash in the wanted directory and run the following commands:
+1 - git init
+2 - git remote add origin https://github.com/matheus-paiva/Testes-Squad-2.git
+3 - git pull https://github.com/matheus-paiva/Testes-Squad-2.git master
+
+USING COMMITS
+- After doing the previous step, use the following commands on your bash:
+1 - npm install commitizen -g 
+- If any vulnerabilities happen, use "npm audit fix --force" without the quotation marks to keep going, bash will also guide you with this vulnerabilities
+2 - commitizen init cz-conventional-changelog --save-dev --save-exact
+- If any error occurs, put "--force" without the quotation marks at the end of the command and keep going
+3 - npm run commit
+- After that, you can also start a commit with "git-cz" or "cz" without the quotation marks that it will work
+IF ANYTHING GOES WRONG, PICK A GOD AND PRAY
