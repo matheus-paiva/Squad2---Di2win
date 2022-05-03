@@ -26,11 +26,19 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
+
+## INTALANDO O ANGULAR
+Para realizar a instalação do angula siga os seguintes passos:
+- Realizar a instalação do Nodejs através do link a seguir (https://nodejs.org/en/);
+- Segundo passo, executar este comando no seu terminal "npm install -g @angular/cli";
+- Após isto, você pode abrir o terminal na pasta que foi importado o repositório e rodar "ng serve";
+- Agora você já tem sua aplicação angular rodando, sem problemas.
+
 ## REQUISITOS
 Angular Instalado;
 GitBash Instalado;
 
-## INSTALANDO O PROJETO
+## IMPORTANDO REPOSITÓRIO DO GIT
 Para usar "pull" nos arquivos, abra seu bash no diretório desejado e execute os seguintes comandos:
 - git init
 - git remote add origin https://github.com/matheus-paiva/Testes-Squad-2.git
