@@ -57,7 +57,7 @@ Se ocorrer algum erro, coloque "--force" sem as aspas no final do comando e cont
 - npm run commit
 - Depois disso, você também pode iniciar um commit com "git-cz" ou "cz" sem as aspas que funcionará.
 
-SE ALGO DER ERRADO, ESCOLHAR UM DEUS E REZE
+SE ALGO DER ERRADO, ESCOLHA UM DEUS E REZE
 
 ## REQUIREMENTS
 Angular installed;
