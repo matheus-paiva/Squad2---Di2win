@@ -57,29 +57,4 @@ Se ocorrer algum erro, coloque "--force" sem as aspas no final do comando e cont
 - npm run commit
 - Depois disso, você também pode iniciar um commit com "git-cz" ou "cz" sem as aspas que funcionará.
 
-SE ALGO DER ERRADO, ESCOLHA UM DEUS E REZE
 
-## REQUIREMENTS
-Angular installed;
-GitBash installed;
-
-## INSTALLING THE PROJECT
-To pull the archives, open your bash in the wanted directory and run the following commands:
-- git init
-- git remote add origin https://github.com/matheus-paiva/Testes-Squad-2.git
-- git pull https://github.com/matheus-paiva/Testes-Squad-2.git master
-
-## USING COMMITS
-After doing the previous step, use the following commands on your bash:
-- npm install commitizen -g 
-
-If any vulnerabilities happen, use "npm audit fix --force" without the quotation marks to keep going, bash will also guide you with this vulnerabilities;
-
-- commitizen init cz-conventional-changelog --save-dev --save-exact
-
-If any error occurs, put "--force" without the quotation marks at the end of the command and keep going;
-
-- npm run commit
-- After that, you can also start a commit with "git-cz" or "cz" without the quotation marks that it will work.
-
-IF ANYTHING GOES WRONG, PICK A GOD AND PRAY
