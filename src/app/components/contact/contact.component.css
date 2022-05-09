@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0; 
+}
+
+body{
+  font-family: Arial;
+  background-color: #ac2f2f;
+}
+
+.box{
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #121212;
+  font-family: Arial;
+  color: #fff;
+  border-radius: 2px;
+  padding: 10px 40px;
+  width: 450px;
+}
+
+fieldset{
+  border: 0px;
+}
+
+.input{
+  position: relative;
+  color: #969696;
+}
+
+.input input{
+  height: 30px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #505050;
+  padding:0px 3px;
+  width: 100%;
+}
+
+#telefone select{
+  width: 10.5%;
+  height: 25px;
+  outline: none;
+  border: none;
+  border-radius: 3px 0px 0px 3px;
+}
+
+#telefone input{
+  width: 85%;
+  height: 25px;
+  outline: none;
+  border-radius: 0px 3px 3px 0px;
+  border: none;
+  padding: 0px 10px;
+}

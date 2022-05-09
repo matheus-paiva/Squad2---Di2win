@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 
 
@@ -11,6 +12,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
   declarations: [
     AppComponent,
     NavbarComponent,
+    ContactComponent,
     
   
   ],
