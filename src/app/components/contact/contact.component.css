@@ -5,9 +5,9 @@
 }
 
 .box{
-  position:relative;
-  left: 50%;
-  top: 50%;
+  position:absolute;
+  margin-left: 50%;
+  margin-top:20%;
   transform: translate(-50%, -50%);
   background-color: #121212;
   font-family: Arial;
