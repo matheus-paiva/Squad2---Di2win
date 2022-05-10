@@ -1,11 +1,48 @@
-.sobre {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 5em;
+* {
+  padding: 0;
+  margin: 0; 
+}
+.titleDiferente{
+  height: 20px;
+  padding: 5em;
+}
+.titleDiferente h1{
+
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  font-family: sans-serif;
+}
+.title{
+  color: white;
+  font-size: 45px;
+  font-family: sans-serif;
+}
+
+.txt{
+  padding-top: 5%;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 20em;
+  padding-right: 20em;
+  color: white;
   }
-  
-h1{
-    color: white;
+
+img{
+  height: 461px;
+  width: 570px;
+}
+
+.texto1{
+  padding-top: 25%;
+}
+.texto2{
+  padding-top: 25%;
+}
+.img2{
+  text-align: right;
 }
