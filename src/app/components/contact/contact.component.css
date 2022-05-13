@@ -4,15 +4,15 @@
   font-family: Arial;
 }
 
-.title h1{
+h1{
   text-align: center;
   color: white;
-  padding-top: 5%;
+  padding: 10%;
 }
 .box{
-  position:absolute;
+  justify-content: center;
   margin-left: 50%;
-  margin-top:23%;
+  margin-top:30%;
   transform: translate(-50%, -50%);
   background-color: #121212;
   font-family: Arial;
@@ -120,4 +120,15 @@ fieldset{
   color: #969696;
   display:block;
   padding-top: 15px;
+}
+@media only screen and (max-width: 820px) {
+  .box{
+    margin-top:0;
+    padding: 0%;
+  }
+  h1{
+    text-align: center;
+    color: white;
+    padding-bottom: 100%;
+  }
 }
