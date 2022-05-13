@@ -2,16 +2,40 @@
   padding: 0;
   margin: 0; 
 }
+.about-us-container {
+  display: grid;
+  grid-template-areas: "main-title main-title"
+                       "first-img first-content "
+                       "second-content second-img"
+                       "contact contact";
+  grid-template-columns: 1fr 1fr;
+  padding: 20%;
+  padding-top: 0%!important;
+  color: white;
+  grid-row-gap: 5%;
+  justify-content: center;
+  }
 .main-title{
-  height: 20px;
-  padding: 5em;
+  grid-area: main-title;
+  height: 2%;
+  padding-top: 8%;
 }
-.main-title h1{
-
+.main-title h1{ 
   text-align: center;
   color: white;
   font-size: 45px;
   font-family: sans-serif;
+}
+img{
+  height: 461px;
+  width: 570px;
+}
+.first-img{
+  grid-area: first-img;
+}
+.first-content{
+  padding-left: 10%;
+  grid-area: first-content;
 }
 .text-title{
   color: white;
@@ -19,25 +43,54 @@
   font-family: sans-serif;
   padding-top: 25%;
 }
-
 .txt{
   padding-top: 5%;
   font-size: 16px;
   font-family: sans-serif;
 }
-.about-us-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding-left: 20em;
-  padding-right: 20em;
-  color: white;
-  }
-
-img{
-  height: 461px;
-  width: 570px;
+.second-content{
+  padding-right: 10%;
+  grid-area: second-content;
 }
-
 .second-img{
   text-align: right;
+  grid-area: second-img;
+}
+.contact{
+  grid-area: contact;
+  padding-top: 10%;
+}
+
+@media only screen and (max-width: 820px) {
+  .about-us-container{
+    grid-template-areas: "main-title" "first-img" "first-content" "second-content" "second-img" "contact";
+    grid-template-columns: 1fr;
+    grid-gap: 2%;
+    justify-content: center;
+  }
+  .main-title{
+    padding-top: 30%;
+    grid-area: main-title;
+  }
+  .first-img{
+    grid-area: first-content;
+  }
+  img{
+    width: 430px;
+    height: 300px;
+  }
+  .first-content{
+    grid-area: first-img;
+  }
+  .second-content{
+    grid-area: second-content;
+    padding-left: 10%;
+  }
+  .second-img{
+    grid-area: second-img;
+  }
+  .contact{
+    grid-area: contact;
+    padding-top: 60%;
+  }
 }
