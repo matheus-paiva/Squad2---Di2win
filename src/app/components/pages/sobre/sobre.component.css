@@ -95,10 +95,11 @@ img{
     font-family: sans-serif;
   }
   .second-content{
-    padding-right: 10%;
+    padding-left: 5%;
     grid-area: second-content;
   }
   .second-img{
+    padding-top: 15%;
     text-align: right;
     grid-area: second-img;
   }
