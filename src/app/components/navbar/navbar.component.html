@@ -1,36 +1,23 @@
-<head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-</head>
-
-<body>
-  
-    <header class="header">
-      <nav id="navbar">
-        <a  routerLink=""><img id="logo" src="https://www.di2win.com/wp-content/uploads/2021/06/logomarca-di2win-registrada-branca-1024x201.png"></a>
-        
-        <button id="btn-mobile" (click)="toggleMenu()" >Menu
-
-          <span id="burger"></span>
-        </button>
-
-        <ul class="list">
-          <li class="item">
-            <a routerLink="/Sobre">Sobre nós</a>
-          </li>
-          <li class="item">
-            <a routerLink="/Produtos">Produtos</a>
-          </li>
-          <li class="item">
-            <a routerLink="/Planos">Planos</a>
-          </li>
-          <li id="login">
-            <a routerLink="">Entre</a>
-          </li>
-        </ul>
-        
-      </nav>
-    </header>
-
-  </body>
+<header class="header">
+  <nav class="nav-bar">
+    <a routerLink=""
+      ><img
+        id="logo"
+        src="https://www.di2win.com/wp-content/uploads/2021/06/logomarca-di2win-registrada-branca-1024x201.png"
+        alt=""
+    /></a>
+    <ul class="nav-list">
+      <li class="destaq"><a routerLink="/Sobre">Sobre nós</a></li>
+      <li class="destaq"><a routerLink="/Produtos">Produtos</a>
+      <ul>
+        <li class="submenu"><a href="#">Transformar imagem/PDF em texto editável</a></li>
+        <li class="submenu"><a href="#">Extrair Dados - OCR/ICR</a></li>
+        <li class="submenu"><a href="#">Buscador dentro do Documento</a></li>
+        <li class="submenu"><a href="#">Comparador de Documentos</a></li>
+      </ul>
+    </li>
+      <li class="destaq"><a routerLink="/Planos">Planos</a></li>
+      <li id="login"><a routerLink="">Entre</a></li>
+    </ul>
+  </nav>
+</header>
