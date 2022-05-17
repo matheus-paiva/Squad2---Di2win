@@ -87,7 +87,7 @@
 .dropdown {
   position: absolute;
   left: 0;
-  top: calc(100% + 0px);
+  top: 100%;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s 125ms ease-in-out;
@@ -150,6 +150,7 @@
   #navbar.active .list {
     visibility: visible;
     height: 38vh;
+    top: 100%;
     overflow-y: hidden;
     overflow-x: hidden;
   }
@@ -193,6 +194,10 @@
   #navbar.active #burger::after{
     transform: rotate(-135deg);
     top: -7px;
+  }
+
+  .dropdown {
+    display: none;
   }
 
 }
