@@ -134,7 +134,7 @@
     display:flex;
     position: absolute;
     width: 30%;
-    height: auto;
+    height: 0px;
     top: 7vh;
     background-color: black;
     flex-direction: column;
