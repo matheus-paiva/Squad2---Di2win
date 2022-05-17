@@ -7,6 +7,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { SobreComponent } from './components/pages/sobre/sobre.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { AppRoutingModule } from 'src/app/app-routing.module';
+import { CadastroComponent } from './components/pages/cadastro/cadastro.component';
 import { LoginComponent } from './components/login/login.component';
 
 
@@ -20,6 +21,7 @@ import { LoginComponent } from './components/login/login.component';
     ContactComponent,
     SobreComponent,
     HomeComponent,
+    CadastroComponent,
     LoginComponent,
     
   
