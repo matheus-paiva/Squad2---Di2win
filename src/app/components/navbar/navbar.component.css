@@ -87,7 +87,7 @@
 .dropdown {
   position: absolute;
   left: 0;
-  top: calc(100% + 1px);
+  top: calc(100% + 0px);
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s 125ms ease-in-out;
