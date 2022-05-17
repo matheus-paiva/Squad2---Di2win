@@ -24,7 +24,7 @@
   text-align: center;
   color: white;
   font-size: 45px;
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 img{
   height: 461px;
@@ -40,13 +40,13 @@ img{
 .text-title{
   color: white;
   font-size: 45px;
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
   padding-top: 25%;
 }
 .txt{
   padding-top: 5%;
   font-size: 16px;
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 .second-content{
   padding-right: 10%;
@@ -70,7 +70,7 @@ img{
     text-align: center;
     color: white;
     font-size: 45px;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
   img{
     height: 400px;
@@ -86,13 +86,13 @@ img{
   .text-title{
     color: white;
     font-size: 45px;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     padding-top: 25%;
   }
   .txt{
     padding-top: 5%;
     font-size: 16px;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
   .second-content{
     padding-left: 5%;
