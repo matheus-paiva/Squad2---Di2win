@@ -7,6 +7,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { SobreComponent } from './components/pages/sobre/sobre.component';
 import { HomeComponent } from './components/pages/home/home.component';
 import { AppRoutingModule } from 'src/app/app-routing.module';
+import { LoginComponent } from './components/login/login.component';
 
 
 
@@ -19,6 +20,7 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
     ContactComponent,
     SobreComponent,
     HomeComponent,
+    LoginComponent,
     
   
   ],

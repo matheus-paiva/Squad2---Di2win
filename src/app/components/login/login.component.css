@@ -148,3 +148,19 @@
   font-weight:600;
   text-decoration: none;
 }
+
+@media screen and (max-width: 950px){
+  
+  .left-side{
+    width: 50vw;
+  }
+
+}
+
+@media screen and (max-width: 768px){
+  
+  .left-side{
+    display: none;
+  }
+
+}
