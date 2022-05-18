@@ -16,12 +16,12 @@ img{
     text-align: center;
     color: white;
     font-size: 45px;
-    font-family: 'Poppins', sans-serif;
+    font-family: sans-serif;
 }
 .main-content p{
     padding-top: 5%;
     font-size: 16px;
-    font-family: 'Poppins', sans-serif;
+    font-family: sans-serif;
 }
 .engines{
     display: grid;
