@@ -1,10 +1,17 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+color: white;
 }
 img{
-    width: 90px;
-    height: 90px;
+    width: 110px;
+    height: 110px;
 }
 .container{
     padding-top: 6%;
@@ -16,12 +23,10 @@ img{
     text-align: center;
     color: white;
     font-size: 45px;
-    font-family: 'Poppins', sans-serif;
 }
 .main-content p{
     padding-top: 5%;
     font-size: 16px;
-    font-family: 'Poppins', sans-serif;
 }
 .engines{
     display: grid;
@@ -30,93 +35,209 @@ img{
     margin-top: 5%;
     grid-gap: 5%;
     width: 100%;
-    height: 35%;
+    height: 60%;
+}
+.engine-title h1{
+    font-size: 24px;
+}
+.engine-content p{
+    font-size: 16px;
 }
 .engine-1{
     background: #1D1D1D;
     grid-area: engine-1;
-    border: 2px solid #F063A6;
+    border: 1px solid #F063A6;
     border-radius: 3%;
     display: grid;
-    grid-template-areas: "engine-image engine-title"
-                         "engine-content engine-content"
-                         "engine-btn engine-btn";
-    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "engine-image " 
+                         "engine-title"
+                         "engine-content";
+    grid-template-columns: 1fr;
+    height: 70%;
+    transition: .5s;
+}
+.engine-1:hover{
+    box-shadow: 0 0 10px #e6589c, 0 0 15px #F063A6, 0 0 30px #f770b1;
 }
 .engine-2{
     background: #1D1D1D;
     grid-area: engine-2;
-    border: 2px solid #F063A6;
+    border: 1px solid #F063A6;
     border-radius: 3%;
     display: grid;
-    grid-template-areas: "engine-image engine-title"
-                         "engine-content engine-content"
-                         "engine-btn engine-btn";
-    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "engine-image " 
+                         "engine-title"
+                         "engine-content";
+    grid-template-columns: 1fr;
+    height: 70%;
+    transition: .5s;
+}
+.engine-2:hover{
+    box-shadow: 0 0 10px #e6589c, 0 0 15px #F063A6, 0 0 30px #f770b1;
 }
 .engine-3{
     background: #1D1D1D;
     grid-area: engine-3;
-    border: 2px solid #F063A6;
+    border: 1px solid #F063A6;
     border-radius: 3%;
     display: grid;
-    grid-template-areas: "engine-image engine-title"
-                         "engine-content engine-content"
-                         "engine-btn engine-btn";
-    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "engine-image " 
+                         "engine-title"
+                         "engine-content";
+    grid-template-columns: 1fr;
+    height: 70%;
+    transition: .5s;
+}
+.engine-3:hover{
+    box-shadow: 0 0 10px #e6589c, 0 0 15px #F063A6, 0 0 30px #f770b1;
 }
 .engine-4{
     background: #1D1D1D;
     grid-area: engine-4;
-    border: 2px solid #F063A6;
+    border: 1px solid #F063A6;
     border-radius: 3%;
     display: grid;
-    grid-template-areas: "engine-image engine-title"
-                         "engine-content engine-content"
-                         "engine-btn engine-btn";
-    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "engine-image " 
+                         "engine-title"
+                         "engine-content";
+    grid-template-columns: 1fr;
+    height: 70%;
+    transition: .5s;
+}
+.engine-4:hover{
+    box-shadow: 0 0 10px #e6589c, 0 0 15px #F063A6, 0 0 30px #f770b1;
 }
 .engine-image{
-    grid-area: engine-image;
-    margin-top: 12%;
-    margin-left: 8%;
+    grid-area: engine-title;
+    justify-self: center;
+    align-self: center;
 }
 .engine-title{
-    grid-area: engine-title;
-    margin-top: 6%;
-    margin-left: 4%;
-}
-.engine-3 .engine-title{
-    margin-top: 23%;
-    margin-right: 10%;
+    grid-area: engine-image;
+    justify-self: center;
     text-align: center;
-}
-.engine-4 .engine-title{
-    margin-top: 30%;
-    text-align: left;
+    align-self: center;
 }
 .engine-content{
+    align-self: center;
+    text-align: center;
     grid-area: engine-content;
-    margin-left: 2%;
+    margin: auto 10%;
+
 }
-.engine-btn{
-    grid-area: engine-btn;
+@media only screen and (max-width: 1450px){
+    .container{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .engine-content p{
+        font-size: 14px;
+    }
+
 }
-.btn{
-    color: #fff;
-    font-weight: bold;
-    font-size: 15px;
-    padding: 10px;
-    text-transform: uppercase;
-    margin-left: 30%;
-    background: #eb4d9f;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+@media only screen and (max-width: 1176px){
+    .engine-1{
+        height: 85%;
+    }
+    .engine-2{
+        height: 85%;
+    }
+    .engine-3{
+        height: 85%;
+    }
+    .engine-4{
+        height: 85%;
+    }
 }
-.btn:hover{
-    background-color: #DE338B;
+@media only screen and (max-width: 835px){
+    .container{
+        padding-top: 15%;
+    }
+    .engines{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        gap: 5%;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+    .engine a{
+        scroll-snap-align: start;
+    }
+    .engine-1{
+        height: 50%;
+        padding: 5%;
+        scroll-snap-align: start;
+    }
+    .engine-2{
+        height: 50%;
+        padding: 5%;
+        scroll-snap-align: start;
+    }
+    .engine-3{
+        height: 50%;
+        padding: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
+        scroll-snap-align: start;
+    }
+    .engine-4{
+        height: 50%;
+        padding: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
+        scroll-snap-align: start;
+    }
+    .engine-content{
+        text-align: left;
+        margin: 0;
+        align-self: flex-start;
+    }
 }
+@media only screen and (width: 800px){
+    .engine-1{
+        height: 80%;
+    }
+    .engine-2{
+        height: 80%;
+    }
+    .engine-3{
+        height: 80%;
+    }
+    .engine-4{
+        height: 80%;
+    }
+}
+@media only screen and (max-width: 425px){
+    .engine-1{
+        height: 60%;
+    }
+    .engine-2{
+        height: 60%;
+    }
+    .engine-3{
+        height: 60%;
+    }
+    .engine-4{
+        height: 60%;
+    }
+}
+@media only screen and (max-width: 340px){
+    .engine-1{
+        height: 80%;
+    }
+    .engine-2{
+        height: 80%;
+    }
+    .engine-3{
+        height: 80%;
+    }
+    .engine-4{
+        height: 80%;
+    }
+}
+
+/*
 @media only screen and (max-width: 1680px){
     .engines{
         grid-template-areas: "engine-1 engine-2"   
@@ -126,9 +247,6 @@ img{
         grid-gap: 3%;
         width: 100%;
         height: 55%;
-    }
-    .engine-btn{
-        margin-left: 13%;
     }
     .engine-image{
         margin-left: 30%;
@@ -158,3 +276,4 @@ img{
         margin-left: 5%;
     }
 }
+*/
