@@ -9,16 +9,16 @@
                        "second-content second-img"
                        "contact contact";
   grid-template-columns: 1fr 1fr;
-  padding: 20%;
-  padding-top: 0%!important;
+  grid-gap: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
   color: white;
-  grid-row-gap: 5%;
-  justify-content: center;
   }
 .main-title{
   grid-area: main-title;
   height: 2%;
   padding-top: 8%;
+  justify-self: center;
 }
 .main-title h1{ 
   text-align: center;
@@ -34,23 +34,21 @@ img{
   grid-area: first-img;
 }
 .first-content{
-  padding-left: 10%;
   grid-area: first-content;
+  align-self: center;
 }
 .text-title{
   color: white;
   font-size: 45px;
   font-family: 'Poppins', sans-serif;
-  padding-top: 25%;
 }
 .txt{
-  padding-top: 5%;
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
 }
 .second-content{
-  padding-right: 10%;
   grid-area: second-content;
+  align-self: center;
 }
 .second-img{
   text-align: right;
@@ -58,13 +56,17 @@ img{
 }
 .contact{
   grid-area: contact;
-  padding-top: 10%;
 }
-@media only screen and (max-width: 1175px){
+@media only screen and (max-width: 1401px){
+  .about-us-container{
+    justify-self: center;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
   .main-title{
     grid-area: main-title;
     height: 2%;
-    padding-top: 8%;
+    padding-top: 10%;
   }
   .main-title h1{ 
     text-align: center;
@@ -80,50 +82,95 @@ img{
     grid-area: first-img;
   }
   .first-content{
-    padding-left: 10%;
     grid-area: first-content;
   }
   .text-title{
     color: white;
     font-size: 45px;
     font-family: 'Poppins', sans-serif;
-    padding-top: 25%;
   }
   .txt{
-    padding-top: 5%;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
   }
   .second-content{
-    padding-left: 5%;
     grid-area: second-content;
   }
   .second-img{
-    padding-top: 15%;
-    text-align: right;
+    align-self: end;
     grid-area: second-img;
   }
   .contact{
     grid-area: contact;
-    padding-top: 10%;
+    margin-top: 5%;
   }
 }
-@media only screen and (max-width: 801px) {
+@media only screen and (max-width: 1025px) {
+  .about-us-container{
+    margin: auto 3%;
+    grid-column-gap: 1%;
+  }
+  img{
+    width: 440px;
+    height: 310px;
+  }
+  .contact{
+    margin-top: 15%;
+  }
+}
+@media only screen and (max-width: 835px) {
   .about-us-container{
     grid-template-areas: "main-title" "first-img" "first-content" "second-content" "second-img" "contact";
     grid-template-columns: 1fr;
     grid-gap: 2%;
-    justify-content: center;
+    justify-items: center;
+    margin: 0%;
   }
   .main-title{
-    padding-top: 30%;
     grid-area: main-title;
   }
   .first-img{
     grid-area: first-content;
   }
   img{
-    width: 340px;
+    width: 680px;
+    height: 420px;
+  }
+  .first-content{
+    grid-area: first-img;
+    justify-items: center;
+    margin-left: 2%;
+  }
+  .second-content{
+    grid-area: second-content;
+    justify-items: center;
+    margin-left: 2%;
+  }
+  .second-img{
+    grid-area: second-img;
+  }
+  .contact{
+    grid-area: contact;
+    margin-top: 55%;
+  }
+}
+@media only screen and (max-width: 470px){
+  .about-us-container{
+    grid-template-areas: "main-title" "first-img" "first-content" "second-content" "second-img" "contact";
+    grid-template-columns: 1fr;
+    grid-gap: 2%;
+    justify-content: center;
+    margin: 0;
+  }
+  .main-title{
+    grid-area: main-title;
+    padding-top: 15%;
+  }
+  .first-img{
+    grid-area: first-content;
+  }
+  img{
+    width: 390px;
     height: 210px;
   }
   .first-content{
@@ -131,13 +178,65 @@ img{
   }
   .second-content{
     grid-area: second-content;
-    padding-right: 0%;
   }
   .second-img{
     grid-area: second-img;
   }
   .contact{
     grid-area: contact;
-    padding-top: 150%;
+    margin-top: 105%;
+  }
+}
+@media only screen and (max-width: 398px){
+  .about-us-container{
+    grid-template-areas: "main-title" "first-img" "first-content" "second-content" "second-img" "contact";
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .main-title{
+    grid-area: main-title;
+    padding-top: 15%;
+  }
+  .main-title h1{ 
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .text-title{
+    color: white;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .txt{
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+  }
+  .first-img{
+    grid-area: first-content;
+  }
+  img{
+    width: 310px;
+    height: 210px;
+  }
+  .first-content{
+    grid-area: first-img;
+    margin: 2%;
+    justify-self: center;
+  }
+  .second-content{
+    grid-area: second-content;
+    margin: 2%;
+    justify-self: center;
+  }
+  .second-img{
+    grid-area: second-img;
+  }
+  .contact{
+    grid-area: contact;
+    margin-top: 135%;
   }
 }

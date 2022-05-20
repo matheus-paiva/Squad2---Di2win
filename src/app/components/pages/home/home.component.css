@@ -9,8 +9,8 @@ img{
 .container{
     padding-top: 6%;
     color: white;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 .main-title h1{
     text-align: center;
@@ -28,7 +28,7 @@ img{
     grid-template-areas: "engine-1 engine-2 engine-3 engine-4";
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 5%;
-    grid-gap: 2%;
+    grid-gap: 5%;
     width: 100%;
     height: 35%;
 }
@@ -153,5 +153,8 @@ img{
         grid-template-columns: 1fr;
         width: 100%;
         height: 180%;
+    }
+    .main-content{
+        margin-left: 5%;
     }
 }
