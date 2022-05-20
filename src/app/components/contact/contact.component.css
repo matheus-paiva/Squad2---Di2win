@@ -139,19 +139,16 @@ fieldset{
     width: 100%;
   }
 
-
-  
-
 }
 
-@media only screen and (max-width: 365px) {
+@media only screen and (max-width: 398px) {
   .box{
     margin-top:0%;
     padding: 0%;
-    width: 19.875em;
+    width: 300px;
   }
   .input input{
-    width: 19.875em;
+    width: 300px;
   }
   #telefone select{
     width: 50px;
@@ -162,7 +159,7 @@ fieldset{
   }
   
   #telefone input{
-    width: 266px;
+    width: 250px;
     height: 36px;
     outline: none;
     border: none;
@@ -172,6 +169,6 @@ fieldset{
   
   .checkbox select {
     height: 36px;
-    width: 19.875em;
+    width: 300px;
   }
 }
