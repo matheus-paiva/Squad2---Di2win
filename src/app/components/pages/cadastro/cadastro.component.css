@@ -10,7 +10,9 @@
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background: #505050;
+    background: url("src/assets/engineicons/bg1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   
   #logo{
@@ -20,7 +22,7 @@
   }
   
   .left-side{
-    width: 30vw;
+    width: 35vw;
     height: 100vh;
     background: rgb(0, 0, 0, 0.4);
     align-items: center;
@@ -45,7 +47,7 @@
   }
   
   .right-side{
-    width: 70vw;
+    width: 65vw;
     height: 100vh;
     align-items: center;
     justify-content: center;
@@ -79,7 +81,7 @@
   
   .input input{
     height: 34px;
-    width: 220px;
+    width: 300px;
     outline: none;
     border: none;
     border-radius: 6px;
@@ -147,7 +149,7 @@
   }
   
   #telefone select{
-    width: 50px;
+    width: 60px;
     height: 36px;
     outline: none;
     border: none;
@@ -155,7 +157,7 @@
   }
   
   #telefone input{
-    width: 170px;
+    width: 240px;
     height: 36px;
     outline: none;
     border: none;
@@ -163,6 +165,17 @@
     padding: 0px 15px;
   }
 
+  .select p {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .pessoa{
+    margin-left: 15%;
+  }
+  .select{
+    margin-bottom: 10px;
+  }
+  
   @media only screen and (max-width: 1175px){
     .left-side{
     width: 50vw;

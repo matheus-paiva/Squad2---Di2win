@@ -19,15 +19,27 @@
         <div class="login-box">
   
           <h2>Crie uma nova conta</h2>
-          
-        <div id="Cadastro">
+
+         <div class="select">
+           <p>Qual tipo de cadastro deseja realizar?</p>
+           <label>
+            <input class="empresa" [value]="0" [(ngModel)]="sh" name="sh" type="radio"[checked]="isChecked"/>
+            Empresa
+           </label>
+           <label>
+            <input class="pessoa" [value]="1" [(ngModel)]="sh" name="sh" type="radio"[checked]="!isChecked"/>
+            Pessoa Física
+           </label>
+         </div> 
+
+        <div id="Cadastro" *ngIf="sh == 1">
             <div class="input">
-              <label for="text">Nome do usuário ou empresa</label>
-              <input type="text" name="text" placeholder="Digite seu usuário ou empresa">
+              <label for="text">Nome do usuário</label>
+              <input type="text" name="text" placeholder="Digite seu usuário">
             </div>
             <div class="input">
-              <label for="text">CNPJ ou CPF</label>
-              <input type="text" name="text" placeholder="Digite seu CPF ou CNPJ">
+              <label for="text">CPF</label>
+              <input type="text" name="text" placeholder="Digite seu CPF">
             </div>
             <div id="telefone">
               <label for="telefone">Telefone</label><br>
@@ -46,12 +58,41 @@
               <label for="senha">Confirmação de senha</label>
               <input type="password" name="senha" placeholder="Confirme sua senha">
             </div>
+            <div class="btn">
+              <input id="submit" type="submit" name="enviar" value="Finalizar Cadastro">
+            </div>
           </div>
 
-          <div class="btn">
-            <input id="submit" type="submit" name="enviar" value="Finalizar Cadastro">
+          <div id="Cadastro" *ngIf="sh == 0">
+            <div class="input">
+              <label for="text">Nome da empresa</label>
+              <input type="text" name="text" placeholder="Digite nome da sua empresa">
+            </div>
+            <div class="input">
+              <label for="text">CNPJ</label>
+              <input type="text" name="text" placeholder="Digite seu CNPJ">
+            </div>
+            <div id="telefone">
+              <label for="telefone">Telefone</label><br>
+              <select name="pais" id="pais"></select>
+              <input type="tel" required>
+            </div>
+            <div class="input">
+              <label for="email">E-mail</label>
+              <input type="email" name="email" placeholder="Digite seu e-mail">
+            </div>
+            <div class="input">
+              <label for="senha">Senha</label>
+              <input type="password" name="senha" placeholder="Senha">
+            </div>
+            <div class="input">
+              <label for="senha">Confirmação de senha</label>
+              <input type="password" name="senha" placeholder="Confirme sua senha">
+            </div>
+            <div class="btn">
+              <input id="submit" type="submit" name="enviar" value="Finalizar Cadastro">
+            </div>
           </div>
-
         </div>
   
         <div class="sign-up">
