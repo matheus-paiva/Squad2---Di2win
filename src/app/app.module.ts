@@ -9,6 +9,7 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { AppRoutingModule } from 'src/app/app-routing.module';
 import { CadastroComponent } from './components/pages/cadastro/cadastro.component';
 import { LoginComponent } from './components/login/login.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -27,7 +28,7 @@ import { LoginComponent } from './components/login/login.component';
   
   ],
   imports: [
-    BrowserModule, AppRoutingModule,
+    BrowserModule, AppRoutingModule,FormsModule
     ],
   providers: [],
   bootstrap: [AppComponent]
