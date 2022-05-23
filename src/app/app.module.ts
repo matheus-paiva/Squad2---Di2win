@@ -10,6 +10,7 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
 import { CadastroComponent } from './components/pages/cadastro/cadastro.component';
 import { LoginComponent } from './components/login/login.component';
 import { FormsModule } from '@angular/forms';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -24,6 +25,7 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     CadastroComponent,
     LoginComponent,
+    FooterComponent,
     
   
   ],
