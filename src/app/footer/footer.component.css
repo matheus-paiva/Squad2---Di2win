@@ -17,14 +17,15 @@
   margin-top: 5px;
 }
 
-footer{
-  position: absolute;
+.footer{
+  position:static;
   bottom: 0px;
   width: 100%;
   background-color: #111;
   font-family: 'Poppins', sans-serif;
   color: #dfdfdf;
   padding: 0 15%;
+  padding-top: auto;
 }
 
 .main{
@@ -97,7 +98,7 @@ footer{
 }
 
 @media screen and (max-width: 700px) {
-  footer{
+  .footer{
     position: absolute;
     bottom: 0px;
   }
