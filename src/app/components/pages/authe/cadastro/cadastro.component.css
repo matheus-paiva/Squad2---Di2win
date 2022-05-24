@@ -19,6 +19,7 @@
     width: 259px;
     height: 51px;
     margin-bottom: 8px;
+    margin-top: 50px;
   }
   
   .left-side{
@@ -176,12 +177,6 @@
     margin-bottom: 10px;
   }
   
-  @media only screen and (max-width: 1175px){
-    .left-side{
-    width: 50vw;
-    } 
-  }
-
   @media only screen and (max-width: 768px){
     .left-side{
         display: none;
@@ -190,11 +185,11 @@
         display: none;
     }
     .login-box{
-        height:70vh;
+        height:auto;
         width: 90vw;
         margin-bottom: 0px;
+        margin-top: 30px;
     }
-    
     .input input{
         width: 100%;
         margin-bottom: 15px;
