@@ -11,6 +11,7 @@ import { CadastroComponent } from './components/pages/cadastro/cadastro.componen
 import { LoginComponent } from './components/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
+import { FirstEngineComponent } from './components/first-engine/first-engine.component';
 
 
 
@@ -26,6 +27,7 @@ import { FooterComponent } from './footer/footer.component';
     CadastroComponent,
     LoginComponent,
     FooterComponent,
+    FirstEngineComponent,
     
   
   ],

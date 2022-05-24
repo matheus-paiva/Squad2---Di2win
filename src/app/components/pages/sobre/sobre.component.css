@@ -17,7 +17,7 @@
 .main-title{
   grid-area: main-title;
   height: 2%;
-  padding-top: 8%;
+  padding-top: 10%;
   justify-self: center;
 }
 .main-title h1{ 
