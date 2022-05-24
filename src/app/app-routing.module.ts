@@ -6,6 +6,8 @@ import { HomeComponent } from "./Pages/home/home.component";
 import { SobreComponent } from "./Pages/sobre/sobre.component";
 import { TrocarSenhaComponent } from "./Pages/trocar-senha/trocar-senha.component";
 import { FirstEngineComponent } from "./Pages/first-engine/first-engine.component";
+import { SecondEngineComponent } from './Pages/second-engine/second-engine.component';
+
 
 const routes: Routes = [
     {path: '', component: HomeComponent },
@@ -14,6 +16,7 @@ const routes: Routes = [
     {path:'Cadastro',component: CadastroComponent},
     {path:'usernamerecovery',component: TrocarSenhaComponent},
     {path:'first-engine', component: FirstEngineComponent},
+    {path:'second-engine', component: SecondEngineComponent},
 ];
 
 @NgModule ({
