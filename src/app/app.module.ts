@@ -15,6 +15,7 @@ import { TrocarSenhaComponent } from './Pages/trocar-senha/trocar-senha.componen
 import { FirstEngineComponent } from './Pages/first-engine/first-engine.component';
 import { SecondEngineComponent } from './Pages/second-engine/second-engine.component';
 import { ThirdEngineComponent } from './Pages/third-engine/third-engine.component';
+import { FourthEngineComponent } from './Pages/fourth-engine/fourth-engine.component';
 
 
 
@@ -34,6 +35,7 @@ import { ThirdEngineComponent } from './Pages/third-engine/third-engine.componen
     FirstEngineComponent,
     SecondEngineComponent,
     ThirdEngineComponent,
+    FourthEngineComponent,
     
   
   ],

@@ -8,6 +8,7 @@ import { TrocarSenhaComponent } from "./Pages/trocar-senha/trocar-senha.componen
 import { FirstEngineComponent } from "./Pages/first-engine/first-engine.component";
 import { SecondEngineComponent } from './Pages/second-engine/second-engine.component';
 import { ThirdEngineComponent } from './Pages/third-engine/third-engine.component';
+import { FourthEngineComponent } from './Pages/fourth-engine/fourth-engine.component';
 
 
 const routes: Routes = [
@@ -18,7 +19,8 @@ const routes: Routes = [
     {path:'usernamerecovery',component: TrocarSenhaComponent},
     {path:'first-engine', component: FirstEngineComponent},
     {path:'second-engine', component: SecondEngineComponent},
-    {path:'third-engine', component: ThirdEngineComponent}
+    {path:'third-engine', component: ThirdEngineComponent},
+    {path:'fourth-engine', component: FourthEngineComponent},
 ];
 
 @NgModule ({
