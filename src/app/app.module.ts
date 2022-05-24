@@ -14,6 +14,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { TrocarSenhaComponent } from './Pages/trocar-senha/trocar-senha.component';
 import { FirstEngineComponent } from './Pages/first-engine/first-engine.component';
 import { SecondEngineComponent } from './Pages/second-engine/second-engine.component';
+import { ThirdEngineComponent } from './Pages/third-engine/third-engine.component';
 
 
 
@@ -31,7 +32,8 @@ import { SecondEngineComponent } from './Pages/second-engine/second-engine.compo
     FooterComponent,
     TrocarSenhaComponent,
     FirstEngineComponent,
-    SecondEngineComponent
+    SecondEngineComponent,
+    ThirdEngineComponent,
     
   
   ],
