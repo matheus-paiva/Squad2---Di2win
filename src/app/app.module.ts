@@ -10,8 +10,8 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
 import { CadastroComponent } from './components/pages/cadastro/cadastro.component';
 import { LoginComponent } from './components/login/login.component';
 import { FormsModule } from '@angular/forms';
-import { FooterComponent } from './footer/footer.component';
-import { FirstEngineComponent } from './components/first-engine/first-engine.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { FirstEngineComponent } from './components/pages/first-engine/first-engine.component';
 
 
 
