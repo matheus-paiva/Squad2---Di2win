@@ -12,6 +12,7 @@ import { LoginComponent } from './Pages/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { FooterComponent } from './components/footer/footer.component';
 import { TrocarSenhaComponent } from './Pages/trocar-senha/trocar-senha.component';
+import { FirstEngineComponent } from './Pages/first-engine/first-engine.component';
 
 
 
@@ -27,7 +28,8 @@ import { TrocarSenhaComponent } from './Pages/trocar-senha/trocar-senha.componen
     CadastroComponent,
     LoginComponent,
     FooterComponent,
-    TrocarSenhaComponent
+    TrocarSenhaComponent,
+    FirstEngineComponent
     
   
   ],

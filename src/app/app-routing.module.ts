@@ -5,6 +5,7 @@ import { CadastroComponent } from "./Pages/cadastro/cadastro.component";
 import { HomeComponent } from "./Pages/home/home.component";
 import { SobreComponent } from "./Pages/sobre/sobre.component";
 import { TrocarSenhaComponent } from "./Pages/trocar-senha/trocar-senha.component";
+import { FirstEngineComponent } from "./Pages/first-engine/first-engine.component";
 
 const routes: Routes = [
     {path: '', component: HomeComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
     {path: 'Login', component: LoginComponent},
     {path:'Cadastro',component: CadastroComponent},
     {path:'usernamerecovery',component: TrocarSenhaComponent},
+    {path:'first-engine', component: FirstEngineComponent},
 ];
 
 @NgModule ({
