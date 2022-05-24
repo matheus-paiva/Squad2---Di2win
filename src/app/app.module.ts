@@ -4,13 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { SobreComponent } from './components/pages/sobre/sobre.component';
-import { HomeComponent } from './components/pages/home/home.component';
+import { SobreComponent } from './Pages/sobre/sobre.component';
+import { HomeComponent } from './Pages/home/home.component';
 import { AppRoutingModule } from 'src/app/app-routing.module';
-import { CadastroComponent } from './components/pages/cadastro/cadastro.component';
-import { LoginComponent } from './components/login/login.component';
+import { CadastroComponent } from './Pages/cadastro/cadastro.component';
+import { LoginComponent } from './Pages/login/login.component';
 import { FormsModule } from '@angular/forms';
-import { FooterComponent } from './footer/footer.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { TrocarSenhaComponent } from './Pages/trocar-senha/trocar-senha.component';
 
 
 
@@ -26,7 +27,7 @@ import { FooterComponent } from './footer/footer.component';
     CadastroComponent,
     LoginComponent,
     FooterComponent,
-    
+    TrocarSenhaComponent,
   
   ],
   imports: [
