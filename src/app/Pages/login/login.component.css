@@ -13,6 +13,7 @@
   background: url("src/assets/engineicons/bg1.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 #logo{
@@ -24,7 +25,7 @@
 .left-side{
   width: 35vw;
   height: 100vh;
-  background: rgb(0, 0, 0, 0.4);
+  background: rgb(0, 0, 0, 0.5);
   align-items: center;
   display: flex;
   flex-direction: column;

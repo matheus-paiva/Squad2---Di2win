@@ -19,7 +19,7 @@
 .left-side{
   width: 35vw;
   height: 100vh;
-  background: rgb(0, 0, 0, 0.4);
+  background: rgb(0, 0, 0, 0.5);
   align-items: center;
   display: flex;
   flex-direction: column;
