@@ -7,7 +7,8 @@
   grid-template-areas: "main-title main-title"
                        "first-img first-content "
                        "second-content second-img"
-                       "contact contact";
+                       "contact contact"
+                       "footer footer";
   grid-template-columns: 1fr 1fr;
   grid-gap: 5%;
   margin-left: 15%;
@@ -56,6 +57,10 @@ img{
 }
 .contact{
   grid-area: contact;
+}
+.footer{
+  grid-area: footer;
+  margin-top: 210px;
 }
 @media only screen and (max-width: 1401px){
   .about-us-container{
@@ -152,6 +157,9 @@ img{
   .contact{
     grid-area: contact;
     margin-top: 55%;
+  }
+  .footer{
+    margin-top: 0px;
   }
 }
 @media only screen and (max-width: 470px){
