@@ -71,3 +71,34 @@ img{
 span{
     font-size: 26px;
 }
+@media only screen and (max-width: 799px){
+    .container{
+        grid-template-areas: "main-title"
+                             "second-container"
+                             "main-content";
+        grid-template-columns: 1fr;
+        padding-top: 15%;
+    }
+    .main-title h1{
+        font-size: 32px;
+    }
+    .btn{
+        padding: 10px 10px;
+    }
+    .main-illustration{
+        margin-top: 10%;
+    }
+
+}
+@media only screen and (max-width: 369px){
+    .btn{
+        padding: 6px 6px;
+        margin-top: 15%;
+    }
+    .main-illustration{
+        margin-top: 15%;
+    }
+    .txt-or{
+        margin-top: 15%;
+    }
+}
