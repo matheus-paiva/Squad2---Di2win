@@ -10,6 +10,9 @@ import { FormsModule } from '@angular/forms';
 import { TrocarSenhaComponent } from './Pages/trocar-senha/trocar-senha.component';
 import { FirstEngineComponent } from './Pages/first-engine/first-engine.component';
 import { PageNotFoundComponent } from './Pages/page-not-found/page-not-found.component';
+import { SecondEngineComponent } from './Pages/second-engine/second-engine.component';
+import { ThirdEngineComponent } from './Pages/third-engine/third-engine.component';
+import { FourthEngineComponent } from './Pages/fourth-engine/fourth-engine.component';
 
 
 
@@ -24,6 +27,9 @@ import { PageNotFoundComponent } from './Pages/page-not-found/page-not-found.com
     TrocarSenhaComponent,
     FirstEngineComponent,
     PageNotFoundComponent
+    SecondEngineComponent,
+    ThirdEngineComponent,
+    FourthEngineComponent,
     
   
   ],
