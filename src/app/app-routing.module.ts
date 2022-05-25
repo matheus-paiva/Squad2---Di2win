@@ -8,10 +8,13 @@ import { PageNotFoundComponent } from "./Pages/page-not-found/page-not-found.com
 import { SecondEngineComponent } from './Pages/second-engine/second-engine.component';
 import { ThirdEngineComponent } from './Pages/third-engine/third-engine.component';
 import { FourthEngineComponent } from './Pages/fourth-engine/fourth-engine.component';
+import { SobreComponent } from "./Pages/sobre/sobre.component";
+import { HomeComponent } from "./Pages/home/home.component";
 
 
 const routes: Routes = [
-    {path: '', redirectTo:'/home',pathMatch:'full' },
+    {path: '',component:HomeComponent},
+    {path:'sobre',component:SobreComponent},
     {path: 'Login', component: LoginComponent},
     {path:'Cadastro',component: CadastroComponent},
     {path:'usernamerecovery',component: TrocarSenhaComponent},
@@ -19,12 +22,6 @@ const routes: Routes = [
     {path:'second-engine', component: SecondEngineComponent},
     {path:'third-engine', component: ThirdEngineComponent},
     {path:'fourth-engine', component: FourthEngineComponent},
-
-    {path:'home',
-    loadChildren:() => import('./Pages/home/home.module').then((m)=>m.HomeModule),},
-
-    {path:'sobre',
-    loadChildren:() => import('./Pages/sobre/sobre.module').then((m)=>m.SobreModule),},
 
     {path:'**', component: PageNotFoundComponent},
 

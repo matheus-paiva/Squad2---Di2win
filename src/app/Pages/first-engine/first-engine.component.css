@@ -10,7 +10,8 @@ img{
 .container{
     display:grid;
     grid-template-areas: "main-title main-title"
-                         "main-content second-container";
+                         "main-content second-container"
+                         "footer footer";
     grid-template-columns: 1fr 1fr;
     margin-left: 10%;
     margin-right: 10%;
@@ -71,6 +72,11 @@ img{
 span{
     font-size: 26px;
 }
+
+.footer{
+    grid-area: footer;
+    padding-top: 200px;
+  }
 @media only screen and (max-width: 799px){
     .container{
         grid-template-areas: "main-title"
