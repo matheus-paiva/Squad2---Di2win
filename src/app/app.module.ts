@@ -17,6 +17,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SobreComponent } from './Pages/sobre/sobre.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './Pages/home/home.component';
+import { EngineTestComponent } from './components/engine-test/engine-test.component';
 
 
 
@@ -37,7 +38,8 @@ import { HomeComponent } from './Pages/home/home.component';
     FourthEngineComponent,
     FooterComponent,
     SobreComponent,
-    ContactComponent
+    ContactComponent,
+    EngineTestComponent
     
   
   ],

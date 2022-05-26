@@ -10,18 +10,20 @@ import { ThirdEngineComponent } from './Pages/third-engine/third-engine.componen
 import { FourthEngineComponent } from './Pages/fourth-engine/fourth-engine.component';
 import { SobreComponent } from "./Pages/sobre/sobre.component";
 import { HomeComponent } from "./Pages/home/home.component";
+import { EngineTestComponent } from './components/engine-test/engine-test.component';
 
 
 const routes: Routes = [
-    {path: '',component:HomeComponent},
+    {path:'',component:HomeComponent},
     {path:'sobre',component:SobreComponent},
-    {path: 'Login', component: LoginComponent},
+    {path:'Login', component: LoginComponent},
     {path:'Cadastro',component: CadastroComponent},
     {path:'usernamerecovery',component: TrocarSenhaComponent},
     {path:'first-engine', component: FirstEngineComponent},
     {path:'second-engine', component: SecondEngineComponent},
     {path:'third-engine', component: ThirdEngineComponent},
     {path:'fourth-engine', component: FourthEngineComponent},
+    {path:'engine-test', component: EngineTestComponent},
 
     {path:'**', component: PageNotFoundComponent},
 
