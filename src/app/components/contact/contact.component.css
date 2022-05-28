@@ -108,7 +108,7 @@ fieldset{
   text-transform: uppercase;
   outline: none;
   border-radius: 5px;
-  background-color: #E465A1;
+  background-color: #cf006b;
   color: #fff;
   font-weight: bold;
   font-size:16px;
@@ -116,7 +116,7 @@ fieldset{
 
 #btn-enviar:hover{
   cursor:pointer;
-  background-color: #E04392;
+  background-color: #a00053;
   transition: 0.3s;
   opacity: 0.9;
 }

@@ -52,12 +52,12 @@
   text-transform: uppercase;
   position: relative;
   margin-left: 30px;
-  background: #eb4d9f;
+  background: #cf006b;
   border-radius: 5px;
 }
 
 #login a:hover{
-  background-color: #DE338B;
+  background-color: #a00053;
 }
 
 #btn-mobile{
@@ -197,7 +197,7 @@
   }
 
   .dropdown {
-    display: none;
+    display: none; 
   }
 
 }
