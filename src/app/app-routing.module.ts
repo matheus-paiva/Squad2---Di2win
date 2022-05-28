@@ -1,29 +1,53 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
-import { LoginComponent } from "./Pages/login/login.component";
-import { CadastroComponent } from "./Pages/cadastro/cadastro.component";
-import { TrocarSenhaComponent } from "./Pages/trocar-senha/trocar-senha.component";
-import { FirstEngineComponent } from "./Pages/first-engine/first-engine.component";
 import { PageNotFoundComponent } from "./Pages/page-not-found/page-not-found.component";
-import { SecondEngineComponent } from './Pages/second-engine/second-engine.component';
-import { ThirdEngineComponent } from './Pages/third-engine/third-engine.component';
-import { FourthEngineComponent } from './Pages/fourth-engine/fourth-engine.component';
-import { SobreComponent } from "./Pages/sobre/sobre.component";
-import { HomeComponent } from "./Pages/home/home.component";
 import { EngineTestComponent } from './components/engine-test/engine-test.component';
+import { LoginComponent } from "./Pages/auth/login/login.component";
+import { CadastroComponent } from "./Pages/auth/cadastro/cadastro.component";
+import { TrocarSenhaComponent } from "./Pages/auth/trocar-senha/trocar-senha.component";
 
 
 const routes: Routes = [
-    {path:'',component:HomeComponent},
-    {path:'sobre',component:SobreComponent},
-    {path:'Login', component: LoginComponent},
-    {path:'Cadastro',component: CadastroComponent},
-    {path:'usernamerecovery',component: TrocarSenhaComponent},
-    {path:'first-engine', component: FirstEngineComponent},
-    {path:'second-engine', component: SecondEngineComponent},
-    {path:'third-engine', component: ThirdEngineComponent},
-    {path:'fourth-engine', component: FourthEngineComponent},
+    {path:'', redirectTo:'/home', pathMatch:'full'},
     {path:'engine-test', component: EngineTestComponent},
+    {path:'Login', component: LoginComponent},
+    {path:'Cadastro', component: CadastroComponent},
+    {path:'usernamerecovery', component: TrocarSenhaComponent},
+
+    {path:'home', 
+    loadChildren: () => 
+    import('./Pages/home/home.module').then((m) => m.HomeModule),
+    },
+
+    {path:'sobre',
+    loadChildren: () =>
+    import('./Pages/sobre/sobre.module').then((m) => m.SobreModule),
+    },
+
+    {path:'first-engine',
+    loadChildren: () => 
+    import('./Pages/first-engine/first-engine.module').then((m) => m.FirstEngineModule),
+    },
+
+    {path:'second-engine',
+    loadChildren: () => 
+    import('./Pages/second-engine/second-engine.module').then((m) => m.SecondEngineModule),
+    },
+
+    {path:'third-engine',
+    loadChildren: () => 
+    import('./Pages/third-engine/third-engine.module').then((m) => m.ThirdEngineModule), 
+    },
+
+    {path:'fourth-engine',
+    loadChildren: () => 
+    import('./Pages/fourth-engine/fourth-engine.module').then((m) => m.FourthEngineModule),
+    },
+
+    {path:'auth',
+    loadChildren: () => 
+    import('./Pages/auth/auth.module').then((m) => m.AuthModule),
+    }, 
 
     {path:'**', component: PageNotFoundComponent},
 

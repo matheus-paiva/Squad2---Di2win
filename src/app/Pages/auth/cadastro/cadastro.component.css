@@ -108,7 +108,7 @@
     outline: none;
     border: none;
     color: #fff;
-    background-color: #E465A1;
+    background-color: #cf006b;
     font-weight: 600;
     border-radius: 5px;
     cursor: pointer;
@@ -116,7 +116,7 @@
   }
   
   #submit:hover{
-    background-color: #DE338B;
+    background-color: #a00053;
   }
   
   .login-box span{
