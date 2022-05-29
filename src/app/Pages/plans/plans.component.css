@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #303030;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  margin:0 10%;
+}
+
+.planos{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  gap: 4%;
+}
+
+.micro, .small, .medium, .large{
+  border: 1px solid #fff;
+  padding: 10px 25px;
+  margin-top: 5%;
+  background: #1D1D1D;
+  width: 30%;
+  border-radius: 15px;
+  transition: all 0.2s ease;
+  padding-bottom: 20px;
+}
+
+.micro:hover, .small:hover, .medium:hover, .large:hover{
+  background-color: rgb(29, 29, 29, 0.5);
+}
+
+.container > h1{
+  margin-top: 5%;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h3{
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 8%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  height: 56px;
+}
+
+.info{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10%;
+  line-height: 60px;
+}
+
+.buy{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-top: 20px;
+}
+
+.buy span{
+  font-size: 28px;
+}
+
+.buy button{
+  width: 100%;
+  padding: 10px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  text-transform: uppercase;
+  background-color: #cf006b;
+  color: #fff;
+  font-weight: bold;
+}
+
+.buy button:hover{
+  background-color: #a00053;
+}
+
+@media only screen and (max-width: 1050px){
+
+  .container{
+    margin: 0 5%;
+  }
+}
+
+@media only screen and (max-width: 950px){
+
+  body{
+    height: calc(100%);
+    padding-bottom: 80px;
+  }
+
+  .container{
+    margin: 0 15%;
+  }
+
+  .planos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .micro, .small, .medium, .large{
+    width: 100%;
+  }
+
+  h3{
+    padding-top: 3%;
+  }
+
+  .info{
+    padding-top: 1%;
+  }
+
+  .buy{
+    padding-top: 10px;
+  }
+
+}
