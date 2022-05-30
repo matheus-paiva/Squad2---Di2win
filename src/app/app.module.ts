@@ -10,7 +10,8 @@ import { EngineTestComponent } from './components/engine-test/engine-test.compon
 import { CadastroComponent } from './Pages/auth/cadastro/cadastro.component';
 import { LoginComponent } from './Pages/auth/login/login.component';
 import { TrocarSenhaComponent } from './Pages/auth/trocar-senha/trocar-senha.component';
-import { PlansComponent } from './Pages/plans/plans.component';
+import { SharedModule } from './shared/shared.module';
+
 
 
 
@@ -25,12 +26,11 @@ import { PlansComponent } from './Pages/plans/plans.component';
     CadastroComponent,
     LoginComponent,
     TrocarSenhaComponent,
-    PlansComponent
     
   
   ],
   imports: [
-    BrowserModule, AppRoutingModule,FormsModule
+    BrowserModule, AppRoutingModule,FormsModule,SharedModule,
     ],
   providers: [],
   bootstrap: [AppComponent]
