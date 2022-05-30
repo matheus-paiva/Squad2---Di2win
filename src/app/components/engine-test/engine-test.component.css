@@ -41,7 +41,34 @@ img{
     border-radius: 26px;
     padding-bottom: 12%;
     text-align: center;
+    background-color: #0b0c10;
+
 }
 #archive-test{
     display:none;
+}
+@media only screen and (max-width: 799px){
+    .container{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .file-input{
+        margin-top: 20%;
+    }
+    .main-title{
+        padding-top: 25%;
+    }
+    .main-title h1{
+        font-size: 32px;
+    }
+    .upload-text{
+        font-size: 18px;
+    }
+    img{
+        width: 16%;
+        margin-top: 14%;
+    }
+    .archive-upload{
+        padding-bottom: 14%;
+    }
 }
