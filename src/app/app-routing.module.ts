@@ -47,7 +47,12 @@ const routes: Routes = [
     {path:'auth',
     loadChildren: () => 
     import('./Pages/auth/auth.module').then((m) => m.AuthModule),
-    }, 
+    },
+
+    {path:'planos',
+    loadChildren: () => 
+    import('./Pages/plans/plans.module').then((m) => m.PlansModule),
+    },  
 
     {path:'**', component: PageNotFoundComponent},
 
