@@ -9,13 +9,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { PageNotFoundComponent } from './Pages/page-not-found/page-not-found.component';
 import { EngineTestComponent } from './components/engine-test/engine-test.component';
 import { SharedModule } from './shared/shared.module';
-<<<<<<< HEAD
-import { LoginComponent } from './Pages/auth/login/login.component';
-
-=======
-import { PaymentComponent } from './Pages/payment/payment.component';
 import { NgxMaskModule } from 'ngx-mask';
->>>>>>> 0d92c92597d06d0fe74fdd191a2c39530fb148c0
+import { PaymentComponent } from './Pages/payment/payment.component';
 
 
 
@@ -27,16 +22,7 @@ import { NgxMaskModule } from 'ngx-mask';
     NavbarComponent,
     PageNotFoundComponent,
     EngineTestComponent,
-<<<<<<< HEAD
-    
-    
-=======
-    CadastroComponent,
-    LoginComponent,
-    TrocarSenhaComponent,
-    PaymentComponent,
->>>>>>> 0d92c92597d06d0fe74fdd191a2c39530fb148c0
-  
+    PaymentComponent
   ],
   imports: [
     BrowserModule, AppRoutingModule,FormsModule,SharedModule,ReactiveFormsModule, NgxMaskModule.forRoot(),

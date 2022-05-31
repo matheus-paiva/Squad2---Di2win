@@ -2,13 +2,14 @@ import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { PageNotFoundComponent } from "./Pages/page-not-found/page-not-found.component";
 import { EngineTestComponent } from './components/engine-test/engine-test.component';
-import { LoginComponent } from "./Pages/auth/login/login.component";
+import { PaymentComponent } from "./Pages/payment/payment.component";
 
 
 
 const routes: Routes = [
     {path:'', redirectTo:'/home', pathMatch:'full'},
     {path:'engine-test', component: EngineTestComponent},
+    {path:'payment',component:PaymentComponent},
 
     {path:'home', 
     loadChildren: () => 
