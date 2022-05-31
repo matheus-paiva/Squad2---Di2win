@@ -4,13 +4,13 @@
     box-sizing: border-box;
   }
   
-  #container{
+  .container{
     display: flex;
     width: 100vw;
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background: url("src/assets/engineicons/bg1.png");
+    background: url("../../../../assets/engineicons/bg1.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

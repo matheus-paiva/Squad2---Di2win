@@ -7,10 +7,10 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { PageNotFoundComponent } from './Pages/page-not-found/page-not-found.component';
 import { EngineTestComponent } from './components/engine-test/engine-test.component';
+import { SharedModule } from './shared/shared.module';
 import { CadastroComponent } from './Pages/auth/cadastro/cadastro.component';
 import { LoginComponent } from './Pages/auth/login/login.component';
 import { TrocarSenhaComponent } from './Pages/auth/trocar-senha/trocar-senha.component';
-import { SharedModule } from './shared/shared.module';
 
 
 
@@ -25,6 +25,7 @@ import { SharedModule } from './shared/shared.module';
     CadastroComponent,
     LoginComponent,
     TrocarSenhaComponent,
+    
   
   ],
   imports: [
