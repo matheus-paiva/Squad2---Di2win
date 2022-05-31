@@ -19,8 +19,6 @@ input[type=number] {
 
 body{
   color: #fff;
-  background-color: rgb(114, 114, 114);
-  height: 100vh;
 }
 
 form{
@@ -30,9 +28,10 @@ form{
 }
 
 form h2{
-  margin-top: 5%;
+  margin-top: 8%;
   margin-bottom: 3%;
   text-transform: uppercase;  
+  font-size: 32px;
 }
 
 .box{
@@ -110,6 +109,10 @@ input[name=nome-cartao]{
   font-size: 13px;
   padding-left: 0.2em;
   border-left: 3px solid #db1a2d;
+}
+
+.footer{
+  margin-top: 5%;
 }
 
 @media only screen and (max-width: 1000px){
