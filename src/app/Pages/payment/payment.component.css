@@ -30,7 +30,7 @@ form{
 }
 
 form h2{
-  margin-top: 10%;
+  margin-top: 5%;
   margin-bottom: 3%;
   text-transform: uppercase;  
 }
@@ -42,7 +42,8 @@ form h2{
   background-color: rgb(0, 0, 0, 0.5);
   padding: 2% 3%;
   border-radius: 5px;
-  width: 25%;
+  width: 30%;
+  margin: auto;
 }
 
 
@@ -109,4 +110,20 @@ input[name=nome-cartao]{
   font-size: 13px;
   padding-left: 0.2em;
   border-left: 3px solid #db1a2d;
+}
+
+@media only screen and (max-width: 1000px){
+  
+  .box{
+    width: 60%;
+    margin: 0 10%;
+  }
+
+}
+
+@media only screen and (max-width: 400px){
+
+  .box{
+    width: 80%;
+  }
 }
