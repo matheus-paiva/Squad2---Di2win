@@ -51,6 +51,11 @@ const routes: Routes = [
     import('./Pages/plans/plans.module').then((m) => m.PlansModule),
     },  
 
+    {path:'payment',
+    loadChildren: () => 
+    import('./Pages/payment/payment.module').then((m) => m.PaymentModule),
+    },  
+
     {path:'**', component: PageNotFoundComponent},
 
 ];
