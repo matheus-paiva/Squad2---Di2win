@@ -14,7 +14,7 @@
       <div class="box">
         <div class="cc-number">
           <label for="num-cartao">Número do cartão</label>
-          <input type="text" placeholder="1234 1234 1234 1234" formControlName="number" required>
+          <input type="text" placeholder="1234 1234 1234 1234" formControlName="number" required maxlength="20">
           <div class="icons">
 
           </div>
@@ -41,7 +41,7 @@
 
         <div class="exp-date">
           <label for="date">Data de validade</label>
-          <input type="text" name="date" placeholder="MM/AA" formControlName="date" required>
+          <input type="text" name="date" placeholder="MM/AA" formControlName="date" required mask="M0/00">
 
           <div *ngIf="date.invalid && (formDir.submitted || date.touched)" class="validation-error">
             <p *ngIf="date.errors?.['required']">A data de expiração deve ser preenchido.</p>

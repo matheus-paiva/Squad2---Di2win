@@ -13,6 +13,7 @@ import { LoginComponent } from './Pages/auth/login/login.component';
 import { TrocarSenhaComponent } from './Pages/auth/trocar-senha/trocar-senha.component';
 import { SharedModule } from './shared/shared.module';
 import { PaymentComponent } from './Pages/payment/payment.component';
+import { NgxMaskModule } from 'ngx-mask';
 
 
 
@@ -28,11 +29,10 @@ import { PaymentComponent } from './Pages/payment/payment.component';
     LoginComponent,
     TrocarSenhaComponent,
     PaymentComponent,
-    
   
   ],
   imports: [
-    BrowserModule, AppRoutingModule,FormsModule,SharedModule,ReactiveFormsModule,
+    BrowserModule, AppRoutingModule,FormsModule,SharedModule,ReactiveFormsModule, NgxMaskModule.forRoot(),
     ],
   providers: [],
   bootstrap: [AppComponent]
