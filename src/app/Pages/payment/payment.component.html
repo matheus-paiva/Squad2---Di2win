@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="container">
+
+    <form (ngSubmit)="submit()" [formGroup]="validationForm" #formDir="ngForm">
+      <h2>Pagamento</h2>
+
+      <div class="box">
+        <div class="cc-number">
+          <label for="num-cartao">Número do cartão</label>
+          <input type="text" placeholder="1234 1234 1234 1234" formControlName="number" required maxlength="20">
+          <div class="icons">
+
+          </div>
+          <div *ngIf="number.invalid && (formDir.submitted || number.touched)" class="validation-error">
+            <p *ngIf="number.errors?.['required']">O número do cartão deve ser preenchido.</p>
+            <p *ngIf="number.errors?.['pattern']">Apenas números.</p>
+            <p *ngIf="number.errors?.['min']">O número não pode ser negativo.</p>
+          </div>
+        </div> <!-- cc-number -->
+
+
+        <div class="cc-name">
+          <label for="nome-cartao">Nome impresso no cartão</label>
+          <input type="text" name="nome-cartao" placeholder="Nome impresso" formControlName="name" required>
+
+          <div *ngIf="name.invalid && (formDir.submitted || name.touched)" class="validation-error">
+
+            <p *ngIf="name.errors?.['required']">O número do cartão deve ser preenchido.</p>
+            <p *ngIf="name.errors?.['pattern']">Apenas letras e espaço.</p>
+
+          </div>
+        </div> <!-- cc-name -->
+
+
+        <div class="exp-date">
+          <label for="date">Data de validade</label>
+          <input type="text" name="date" placeholder="MM/AA" formControlName="date" required mask="M0/00">
+
+          <div *ngIf="date.invalid && (formDir.submitted || date.touched)" class="validation-error">
+            <p *ngIf="date.errors?.['required']">A data de expiração deve ser preenchido.</p>
+            <p *ngIf="date.errors?.['pattern']">Apenas números.</p>
+            <p *ngIf="date.errors?.['min']">O número não pode ser negativo.</p>
+          </div>
+        </div> <!-- exp-date -->
+
+
+        <div class="cvv">
+          <label for="cvv">CVV</label>
+          <input type="text" placeholder="000" required formControlName="cvv" maxlength="3" minlength="3">
+
+          <div *ngIf="cvv.invalid && (formDir.submitted || cvv.touched)" class="validation-error">
+            <p *ngIf="cvv.errors?.['required']">O CVV deve ser preenchido.</p>
+            <p *ngIf="cvv.errors?.['minLength(3)']">O CVV deve possuir até 3 digitos.</p>
+            <p *ngIf="cvv.errors?.['pattern']">Apenas números.</p>
+            <p *ngIf="cvv.errors?.['min']">O número não pode ser negativo.</p>
+            
+          </div>
+        </div> <!-- cvv -->
+
+
+        <div class="checkbox">
+          <input type="checkbox" id="checkbox" required> 
+          <span>Aceito os termos e compromissos.</span>
+        </div>
+
+
+        <input type="submit" value="Finalizar">
+
+      </div>
+
+    </form>
+
+  </div>
+</body>
+</html>
