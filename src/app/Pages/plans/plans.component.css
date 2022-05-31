@@ -185,7 +185,6 @@ h4{
 }
 
 h1{
-  min-width: 390px;
   font-size: 32px;
   font-weight: bold;
 }
@@ -246,4 +245,16 @@ h1{
     padding-top: 10px;
   }
 
+}
+
+@media only screen and (max-width: 950px){
+
+  .conversor, .comparador, .buscador, .ocr{
+    width: 80%;
+    margin: 5% 0;
+  }
+
+  .engines-box > h1{
+    margin: 10% 0;
+  }
 }
