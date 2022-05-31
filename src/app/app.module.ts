@@ -8,11 +8,9 @@ import { FormsModule } from '@angular/forms';
 import { PageNotFoundComponent } from './Pages/page-not-found/page-not-found.component';
 import { EngineTestComponent } from './components/engine-test/engine-test.component';
 import { SharedModule } from './shared/shared.module';
-<<<<<<< HEAD
-import { NgxMaskModule } from 'ngx-mask';
-import { PaymentComponent } from './Pages/payment/payment.component';
-=======
->>>>>>> ae4f212011e1bc87369db433bc89f45090008ecd
+import { CadastroComponent } from './Pages/auth/cadastro/cadastro.component';
+import { LoginComponent } from './Pages/auth/login/login.component';
+import { TrocarSenhaComponent } from './Pages/auth/trocar-senha/trocar-senha.component';
 
 
 
@@ -24,14 +22,11 @@ import { PaymentComponent } from './Pages/payment/payment.component';
     NavbarComponent,
     PageNotFoundComponent,
     EngineTestComponent,
-<<<<<<< HEAD
-    PaymentComponent
-=======
     CadastroComponent,
     LoginComponent,
     TrocarSenhaComponent,
+    
   
->>>>>>> ae4f212011e1bc87369db433bc89f45090008ecd
   ],
   imports: [
     BrowserModule, AppRoutingModule,FormsModule,SharedModule,

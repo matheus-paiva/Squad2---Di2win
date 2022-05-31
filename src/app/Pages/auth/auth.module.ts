@@ -12,9 +12,9 @@ import { TrocarSenhaComponent } from './trocar-senha/trocar-senha.component';
 
 @NgModule({
   declarations: [
-    CadastroComponent,
-    LoginComponent,
-    TrocarSenhaComponent,
+    // CadastroComponent,
+    // LoginComponent,
+    // TrocarSenhaComponent,
     AuthComponent
   ],
   imports: [

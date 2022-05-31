@@ -2,14 +2,18 @@ import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { PageNotFoundComponent } from "./Pages/page-not-found/page-not-found.component";
 import { EngineTestComponent } from './components/engine-test/engine-test.component';
-import { PaymentComponent } from "./Pages/payment/payment.component";
+import { CadastroComponent } from "./Pages/auth/cadastro/cadastro.component";
+import { LoginComponent } from "./Pages/auth/login/login.component";
+import { TrocarSenhaComponent } from "./Pages/auth/trocar-senha/trocar-senha.component";
 
 
 
 const routes: Routes = [
     {path:'', redirectTo:'/home', pathMatch:'full'},
     {path:'engine-test', component: EngineTestComponent},
-    {path:'payment',component:PaymentComponent},
+    {path:'Login', component: LoginComponent},
+    {path:'Cadastro', component: CadastroComponent},
+    {path:'usernamerecovery', component: TrocarSenhaComponent},
 
     {path:'home', 
     loadChildren: () => 

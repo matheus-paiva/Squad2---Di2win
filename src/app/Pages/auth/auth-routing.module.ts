@@ -8,14 +8,14 @@ import { TrocarSenhaComponent } from './trocar-senha/trocar-senha.component';
 
 
 const routes: Routes = [
-  {path:'',component:AuthComponent,
-  children:[
-    {path:'', redirectTo:'login',pathMatch:'full'},
-    {path:'login',component:LoginComponent},
-    {path:'cadastro',component:CadastroComponent},
-    {path:'usernamerecovery',component:TrocarSenhaComponent},
-  ]
-},
+//   {path:'',component:AuthComponent,
+//   children:[
+//     {path:'', redirectTo:'login',pathMatch:'full'},
+//     {path:'login',component:LoginComponent},
+//     {path:'cadastro',component:CadastroComponent},
+//     {path:'usernamerecovery',component:TrocarSenhaComponent},
+//   ]
+// },
  
   
 ];
