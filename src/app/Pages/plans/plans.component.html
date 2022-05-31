@@ -8,57 +8,96 @@
 </head>
 <body>
   <div class="container">
-    <h1>Escolha o seu plano</h1>
-    <div class="planos">
-      <div class="micro">
-        <h3>Microempresas</h3>
-        <div class="info">
-          <p>Vantagem 1</p>
-          <p>Vantagem 2</p>
-          <p>Vantagem 3</p>
-        </div>
-        <div class="buy">
-          <span>R$ 00,00</span>
-          <a routerLink="/payment">Comprar</a>
-        </div>
-      </div>
-      <div class="small">
-        <h3>Pequenas empresas</h3>
-        <div class="info">
-          <p>Vantagem 1</p>
-          <p>Vantagem 2</p>
-          <p>Vantagem 3</p>
-        </div>
-        <div class="buy">
-          <span>R$ 00,00</span>
-          <a routerLink="/payment">Comprar</a>
-        </div>
-      </div>
-      <div class="medium">
-        <h3>Médias empresas</h3>
-        <div class="info">
-          <p>Vantagem 1</p>
-          <p>Vantagem 2</p>
-          <p>Vantagem 3</p>
-        </div>
-        <div class="buy">
-          <span>R$ 00,00</span>
-          <a routerLink="/payment">Comprar</a>
-        </div>
-      </div>
-      <div class="large">
-        <h3>Grandes empresas</h3>
-        <div class="info">
-          <p>Vantagem 1</p>
-          <p>Vantagem 2</p>
-          <p>Vantagem 3</p>
-        </div>
-        <div class="buy">
-          <span>R$ 00,00</span>
-          <a routerLink="/payment">Comprar</a>
-        </div>
-      </div>
-    </div>
+
+    <div class="engines-box">
+      <h1>Selecione uma engine</h1>
+
+      <div class="engines">
+        <div class="conversor" (click)="scroll(); show = true">
+          <img src="assets/engineicons/converter.png">
+          <h4>Conversor de Imagem/PDF</h4>
+        </div> <!-- conversor -->
+        <div class="comparador" (click)="scroll(); show = true">
+          <img src="assets/engineicons/comparador.png">
+          <h4>Comparador de Documentos</h4>
+        </div> <!-- comparador -->
+        <div class="buscador" (click)="scroll(); show = true">
+          <img src="assets/engineicons/buscador.png">
+          <h4>Buscador</h4>
+        </div> <!-- buscador -->
+        <div class="ocr" (click)="scroll(); show = true">
+          <img src="assets/engineicons/OCR.png">
+          <h4>OCR</h4>
+        </div> <!-- ocr -->
+      </div> <!-- engines -->
+
+    </div> <!-- engines-box -->
+
+    <div class="target" id="target" #target >
+      <div class="planos" *ngIf="show">
+        <h1>Escolha seu plano</h1>
+        <div class="select">
+          <div class="micro">
+            <h3>Microempresas</h3>
+            <div class="info">
+              <p>Vantagem 1</p>
+              <p>Vantagem 2</p>
+              <p>Vantagem 3</p>
+            </div>
+            <div class="buy">
+              <span>R$ 00,00</span>
+              <a routerLink="/payment">Comprar</a>
+            </div>
+          </div> <!-- micro -->
+          <div class="small">
+            <h3>Pequenas empresas</h3>
+            <div class="info">
+              <p>Vantagem 1</p>
+              <p>Vantagem 2</p>
+              <p>Vantagem 3</p>
+            </div>
+            <div class="buy">
+              <span>R$ 00,00</span>
+              <a routerLink="/payment">Comprar</a>
+            </div>
+          </div> <!-- small -->
+          <div class="medium">
+            <h3>Médias empresas</h3>
+            <div class="info">
+              <p>Vantagem 1</p>
+              <p>Vantagem 2</p>
+              <p>Vantagem 3</p>
+            </div>
+            <div class="buy">
+              <span>R$ 00,00</span>
+              <a routerLink="/payment">Comprar</a>
+            </div>
+          </div> <!-- medium -->
+
+          <div class="large">
+            <h3>Grandes empresas</h3>
+            <div class="info">
+              <p>Vantagem 1</p>
+              <p>Vantagem 2</p>
+              <p>Vantagem 3</p>
+            </div>
+            <div class="buy">
+              <span>R$ 00,00</span>
+              <a routerLink="/payment">Comprar</a>
+            </div>
+          </div> <!-- large -->
+
+        </div> <!-- select -->
+
+      </div> <!-- planos -->
+
+    </div> <!-- target -->
+
+    
+  </div> <!-- container -->
+  <div class="footer">
+    <app-footer></app-footer>
   </div>
+
 </body>
 </html>
