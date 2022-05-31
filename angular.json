@@ -28,7 +28,7 @@
               "src/assets/engineicons"
             ],
             "styles": [
-              "src/styles.css"
+              "./styles.css"
             ],
             "scripts": [
             ]
