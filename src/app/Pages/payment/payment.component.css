@@ -130,3 +130,9 @@ input[name=nome-cartao]{
     width: 80%;
   }
 }
+
+@media only screen and (min-height: 1000px){
+  .footer{
+    padding-top: 50px;
+  }
+}
