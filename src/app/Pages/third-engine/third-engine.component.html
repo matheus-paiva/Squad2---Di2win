@@ -16,16 +16,19 @@
             <img src="assets/engineicons/icon_buscador.png">
         </div>
         <div class="btn-test">
-            <a routerLink="/engine-test" class="btn">Teste Agora</a>
+            <a class="btn" (click)="scroll();">Teste Agora</a>
         </div>
         <div class="txt-or">
             <span>ou</span>
         </div>
         <div class="btn-buy">
-            <a class="btn">Adquira já</a>
+            <a routerLink="/planos" class="btn">Adquira já</a>
         </div>
     </div>
   </div>
+  <div class="engine-test" id="target">
+    <app-engine-test></app-engine-test>
+</div>
   <div class="footer">
     <app-footer></app-footer>
 </div> 

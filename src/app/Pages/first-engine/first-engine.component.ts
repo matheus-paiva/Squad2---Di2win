@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./first-engine.component.css']
 })
 export class FirstEngineComponent implements OnInit {
-
+  scroll(){
+    const element = document.getElementById("target");
+    element?.scrollIntoView();
+  }
   constructor() { }
 
   ngOnInit(): void {

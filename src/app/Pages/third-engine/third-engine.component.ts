@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./third-engine.component.css']
 })
 export class ThirdEngineComponent implements OnInit {
-
+  scroll(){
+    const element = document.getElementById("target");
+    element?.scrollIntoView();
+  }
   constructor() { }
 
   ngOnInit(): void {
