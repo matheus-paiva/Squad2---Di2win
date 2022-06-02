@@ -13,19 +13,19 @@
       <h1>Selecione uma engine</h1>
 
       <div class="engines">
-        <div class="conversor" (click)="scroll(); show = true">
+        <div class="conversor" (click)="scroll()">
           <img src="assets/engineicons/converter.png">
           <h4>Conversor de Imagem/PDF</h4>
         </div> <!-- conversor -->
-        <div class="comparador" (click)="scroll(); show = true">
+        <div class="comparador" (click)="scroll()">
           <img src="assets/engineicons/comparador.png">
           <h4>Comparador de Documentos</h4>
         </div> <!-- comparador -->
-        <div class="buscador" (click)="scroll(); show = true">
+        <div class="buscador" (click)="scroll();">
           <img src="assets/engineicons/buscador.png">
           <h4>Buscador</h4>
         </div> <!-- buscador -->
-        <div class="ocr" (click)="scroll(); show = true">
+        <div class="ocr" (click)="scroll()">
           <img src="assets/engineicons/OCR.png">
           <h4>OCR</h4>
         </div> <!-- ocr -->
@@ -33,8 +33,8 @@
 
     </div> <!-- engines-box -->
 
-    <div class="target" id="target" #target >
-      <div class="planos" *ngIf="show">
+    <div class="target">
+      <div class="planos" id="target" *ngIf="show">
         <h1>Escolha seu plano</h1>
         <div class="select">
           <div class="micro">

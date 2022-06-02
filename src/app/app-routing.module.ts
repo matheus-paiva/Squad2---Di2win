@@ -7,11 +7,13 @@ import { TrocarSenhaComponent } from "./Pages/auth/trocar-senha/trocar-senha.com
 
 
 
+
 const routes: Routes = [
     {path:'', redirectTo:'/home', pathMatch:'full'},
-    {path:'Login', component: LoginComponent},
-    {path:'Cadastro', component: CadastroComponent},
+    {path:'login', component: LoginComponent},
+    {path:'cadastro', component: CadastroComponent},
     {path:'usernamerecovery', component: TrocarSenhaComponent},
+    
 
     {path:'home', 
     loadChildren: () => 
@@ -43,21 +45,17 @@ const routes: Routes = [
     import('./Pages/fourth-engine/fourth-engine.module').then((m) => m.FourthEngineModule),
     },
 
-    {path:'auth',
-    loadChildren: () => 
-    import('./Pages/auth/auth.module').then((m) => m.AuthModule),
-    },
-
     {path:'planos',
     loadChildren: () => 
     import('./Pages/plans/plans.module').then((m) => m.PlansModule),
-    },  
+    }, 
 
     {path:'payment',
     loadChildren: () => 
     import('./Pages/payment/payment.module').then((m) => m.PaymentModule),
     },  
 
+    
     {path:'**', component: PageNotFoundComponent},
 
 ];

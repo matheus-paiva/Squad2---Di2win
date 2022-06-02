@@ -6,8 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./plans.component.css']
 })
 export class PlansComponent implements OnInit {
-
-  show: boolean = false;
+  show = false;
 
  /*  scrollToElement($element: any): void {
     
@@ -18,8 +17,12 @@ export class PlansComponent implements OnInit {
   } */
 
   scroll(){
-    const element = document.getElementById("target");
-    element?.scrollIntoView();
+    this.show = true;
+    setTimeout(()=>{
+      const el=document.getElementById("target")
+      el?.scrollIntoView({behavior:"smooth"});
+    },1);
+    
   }
 
   constructor() { }

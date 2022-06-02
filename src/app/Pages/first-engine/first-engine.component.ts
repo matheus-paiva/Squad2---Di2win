@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class FirstEngineComponent implements OnInit {
   scroll(){
     const element = document.getElementById("target");
-    element?.scrollIntoView();
+    element?.scrollIntoView({behavior:"smooth"});
   }
   constructor() { }
 
