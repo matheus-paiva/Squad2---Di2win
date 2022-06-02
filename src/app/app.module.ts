@@ -10,6 +10,7 @@ import { SharedModule } from './shared/shared.module';
 import { CadastroComponent } from './Pages/auth/cadastro/cadastro.component';
 import { LoginComponent } from './Pages/auth/login/login.component';
 import { TrocarSenhaComponent } from './Pages/auth/trocar-senha/trocar-senha.component';
+import { ClickOutsideDirective } from './directives/click-outside.directive';
 
 
 
@@ -23,7 +24,7 @@ import { TrocarSenhaComponent } from './Pages/auth/trocar-senha/trocar-senha.com
     CadastroComponent,
     LoginComponent,
     TrocarSenhaComponent,
-
+    ClickOutsideDirective,
     
   
   ],
