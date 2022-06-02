@@ -2,41 +2,43 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
-  
-    <header class="header">
-      <nav id="navbar">
-        <a  routerLink=""><img id="logo" src="https://www.di2win.com/wp-content/uploads/2021/06/logomarca-di2win-registrada-branca-1024x201.png"></a>
-        
-        <button id="btn-mobile" (click)="toggleMenu()" >Menu
 
-          <span id="burger"></span>
-        </button>
+<header class="header" >
 
-        <ul class="list">
-          <li class="item">
-            <a routerLink="/sobre">Sobre nós</a>
-          </li>
+  <nav id="navbar" (clickOutside)="clickedOutside()" >
 
-          <li class="item" id="drop-relative"> <a>Produtos</a>
-            <div class="dropdown">
-              <ul>
-                <li><a routerLink="/first-engine">Conversor de Imagem/PDF</a></li>
-                <li><a routerLink="/second-engine">Comparador de Documentos</a></li>
-                <li><a routerLink="/third-engine">Buscador</a></li>
-                <li><a routerLink="/fourth-engine">OCR</a></li>
-              </ul>
-            </div>
-          </li>
+    <a  routerLink=""><img id="logo" src="https://www.di2win.com/wp-content/uploads/2021/06/logomarca-di2win-registrada-branca-1024x201.png"></a>
 
-          <li class="item">
-            <a routerLink="/planos">Planos</a>
-          </li>
-          <li id="login">
-            <a routerLink="/login">Entre</a>
-          </li>
-        </ul>
-        
-      </nav>
-    </header>
+    <button id="btn-mobile" (click)="toggleMenu()" > Menu <span id="burger"></span></button>
+
+      <ul class="list">
+
+        <li class="item"><a href="#">Sobre nós</a></li>
+
+        <li id="drop"><a>Produtos</a>
+          <ul class="dropdown">
+            <li class="menu-dropdown-item"><a href="#">Conversor de Imagem/PDF</a></li>
+            <li class="menu-dropdown-item"><a href="#">Comparador de Documentos</a></li>
+            <li class="menu-dropdown-item"><a href="#">Buscador</a></li>
+            <li class="menu-dropdown-item"><a href="#">OCR</a></li>
+          </ul>
+        </li> <!-- drop -->
+
+        <li id="responsivo"><a (click)="toggleDropdown()">Produtos</a>
+          <ul>
+            <li class="menu-dropdown-resp"><a href="#">Conversor de Imagem/PDF</a></li>
+            <li class="menu-dropdown-resp"><a href="#">Comparador de Documentos</a></li>
+            <li class="menu-dropdown-resp"><a href="#">Buscador</a></li>
+            <li class="menu-dropdown-resp"><a href="#">OCR</a></li>
+          </ul>
+        </li> <!-- drop -->
+
+        <li class="item"><a href="#">Planos</a></li>
+
+        <li class="item" id="login"><a href="#">Entre</a></li>
+      </ul> <!-- list -->
+
+    </nav>
+
+</header>
