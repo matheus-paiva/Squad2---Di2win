@@ -6,7 +6,6 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { AppRoutingModule } from 'src/app/app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { PageNotFoundComponent } from './Pages/page-not-found/page-not-found.component';
-import { EngineTestComponent } from './shared/engine-test/engine-test.component';
 import { SharedModule } from './shared/shared.module';
 import { CadastroComponent } from './Pages/auth/cadastro/cadastro.component';
 import { LoginComponent } from './Pages/auth/login/login.component';
@@ -24,11 +23,12 @@ import { TrocarSenhaComponent } from './Pages/auth/trocar-senha/trocar-senha.com
     CadastroComponent,
     LoginComponent,
     TrocarSenhaComponent,
+
     
   
   ],
   imports: [
-    BrowserModule, AppRoutingModule,FormsModule,SharedModule,
+    BrowserModule, AppRoutingModule,FormsModule,SharedModule
     ],
   providers: [],
   bootstrap: [AppComponent]
