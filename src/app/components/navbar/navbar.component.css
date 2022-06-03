@@ -87,6 +87,7 @@
 
 #drop{
   position: relative;
+  cursor: pointer;
 }
 
 .dropdown{
