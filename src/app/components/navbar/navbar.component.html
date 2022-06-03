@@ -14,29 +14,29 @@
 
       <ul class="list">
 
-        <li class="item"><a href="#">Sobre nós</a></li>
+        <li class="item"><a routerLink="/sobre">Sobre nós</a></li>
 
         <li id="drop"><a>Produtos</a>
           <ul class="dropdown">
-            <li class="menu-dropdown-item"><a href="#">Conversor de Imagem/PDF</a></li>
-            <li class="menu-dropdown-item"><a href="#">Comparador de Documentos</a></li>
-            <li class="menu-dropdown-item"><a href="#">Buscador</a></li>
-            <li class="menu-dropdown-item"><a href="#">OCR</a></li>
+            <li class="menu-dropdown-item"><a routerLink="/first-engine">Conversor de Imagem/PDF</a></li>
+            <li class="menu-dropdown-item"><a routerLink="/second-engine">Comparador de Documentos</a></li>
+            <li class="menu-dropdown-item"><a routerLink="/third-engine">Buscador</a></li>
+            <li class="menu-dropdown-item"><a routerLink="/fourth-engine">OCR</a></li>
           </ul>
         </li> <!-- drop -->
 
         <li id="responsivo"><a (click)="toggleDropdown()">Produtos</a>
           <ul>
-            <li class="menu-dropdown-resp"><a href="#">Conversor de Imagem/PDF</a></li>
-            <li class="menu-dropdown-resp"><a href="#">Comparador de Documentos</a></li>
-            <li class="menu-dropdown-resp"><a href="#">Buscador</a></li>
-            <li class="menu-dropdown-resp"><a href="#">OCR</a></li>
+            <li class="menu-dropdown-resp"><a routerLink="/first-engine">Conversor de Imagem/PDF</a></li>
+            <li class="menu-dropdown-resp"><a routerLink="/second-engine">Comparador de Documentos</a></li>
+            <li class="menu-dropdown-resp"><a routerLink="/third-engine">Buscador</a></li>
+            <li class="menu-dropdown-resp"><a routerLink="/fourth-engine">OCR</a></li>
           </ul>
         </li> <!-- drop -->
 
-        <li class="item"><a href="#">Planos</a></li>
+        <li class="item"><a routerLink="/planos">Planos</a></li>
 
-        <li class="item" id="login"><a href="#">Entre</a></li>
+        <li class="item" id="login"><a routerLink="/login">Entre</a></li>
       </ul> <!-- list -->
 
     </nav>
