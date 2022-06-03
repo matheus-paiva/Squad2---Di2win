@@ -5,17 +5,17 @@
 }
 a{
     text-decoration: none;
-    color: white;
+    color: white; /*cards adjusts, taking off the blue color of the font*/
 }
 a:visited{
-color: white;
+color: white; /*cards adjusts, taking off the blue color of the font*/
 }
 img{
     width: 110px;
     height: 110px;
 }
 .container{
-    padding-top: 10%;
+    padding-top: 10%; /* Important, this padding separate the container and the navbar*/
     color: white;
     margin-left: 10%;
     margin-right: 10%;
