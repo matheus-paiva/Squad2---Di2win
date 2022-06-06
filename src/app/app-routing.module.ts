@@ -1,20 +1,12 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { PageNotFoundComponent } from "./Pages/page-not-found/page-not-found.component";
-import { CadastroComponent } from "./Pages/auth/cadastro/cadastro.component";
-import { LoginComponent } from "./Pages/auth/login/login.component";
-import { TrocarSenhaComponent } from "./Pages/auth/trocar-senha/trocar-senha.component";
-
 
 
 
 const routes: Routes = [
     {path:'', redirectTo:'/home', pathMatch:'full'},
-    {path:'login', component: LoginComponent},
-    {path:'cadastro', component: CadastroComponent},
-    {path:'usernamerecovery', component: TrocarSenhaComponent},
     
-
     {path:'home', 
     loadChildren: () => 
     import('./Pages/home/home.module').then((m) => m.HomeModule),
@@ -45,7 +37,7 @@ const routes: Routes = [
     import('./Pages/fourth-engine/fourth-engine.module').then((m) => m.FourthEngineModule),
     },
 
-    {path:'planos',
+    {path:'plans',
     loadChildren: () => 
     import('./Pages/plans/plans.module').then((m) => m.PlansModule),
     }, 
@@ -55,6 +47,21 @@ const routes: Routes = [
     import('./Pages/payment/payment.module').then((m) => m.PaymentModule),
     },  
 
+    {path:'login',
+    loadChildren: () => 
+    import('./Pages/auth/login/login.module').then((m) => m.LoginModule),
+    },  
+
+    {path:'registration',
+    loadChildren: () => 
+    import('./Pages/auth/registration/registration.module').then((m) => m.RegistrationModule),
+    },  
+    
+    {path:'usernamerecovery',
+    loadChildren: () => 
+    import('./Pages/auth/usernamerecovery/usernamerecovery.module').then((m) => m.UsernamerecoveryModule
+    ),
+    },  
     
     {path:'**', component: PageNotFoundComponent},
 
