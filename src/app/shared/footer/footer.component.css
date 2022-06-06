@@ -97,6 +97,11 @@
   align-items: center;
 }
 
+.content a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 700px) {
   .footer{
     position: static;

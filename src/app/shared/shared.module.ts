@@ -10,7 +10,7 @@ const SHARED_COMPONENTS = [FooterComponent,EngineTestComponent];
   declarations: [SHARED_COMPONENTS],
   imports: [
     CommonModule,
-    FormsModule,
+    FormsModule
   ],
   exports:[SHARED_COMPONENTS],
 })

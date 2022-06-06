@@ -19,7 +19,6 @@ import { ClickOutsideDirective } from './directives/click-outside.directive';
     NavbarComponent,
     PageNotFoundComponent,
     ClickOutsideDirective,
-
   
     
   
