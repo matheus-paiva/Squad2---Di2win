@@ -6,15 +6,15 @@
 
 <header class="header" >
 
-  <nav id="navbar" (clickOutside)="clickedOutside()" >
+  <nav id="navbar" (clickOutside)="closeMenu()" >
 
-    <a  routerLink=""><img id="logo" src="https://www.di2win.com/wp-content/uploads/2021/06/logomarca-di2win-registrada-branca-1024x201.png"></a>
+    <a  routerLink="" (click)="closeMenu()"><img id="logo" src="../../../assets/logo.png"></a>
 
     <button id="btn-mobile" (click)="toggleMenu()" > Menu <span id="burger"></span></button>
 
       <ul class="list">
 
-        <li class="item"><a routerLink="/sobre">Sobre nós</a></li>
+        <li class="item"><a routerLink="/sobre" (click)="closeMenu()">Sobre nós</a></li>
 
         <li id="drop"><a>Produtos</a>
           <ul class="dropdown">
@@ -27,16 +27,16 @@
 
         <li id="responsivo"><a (click)="toggleDropdown()">Produtos</a>
           <ul>
-            <li class="menu-dropdown-resp"><a routerLink="/first-engine">Conversor de Imagem/PDF</a></li>
-            <li class="menu-dropdown-resp"><a routerLink="/second-engine">Comparador de Documentos</a></li>
-            <li class="menu-dropdown-resp"><a routerLink="/third-engine">Buscador</a></li>
-            <li class="menu-dropdown-resp"><a routerLink="/fourth-engine">OCR</a></li>
+            <li class="menu-dropdown-resp"><a routerLink="/first-engine" (click)="closeMenu()">Conversor de Imagem/PDF</a></li>
+            <li class="menu-dropdown-resp"><a routerLink="/second-engine" (click)="closeMenu()">Comparador de Documentos</a></li>
+            <li class="menu-dropdown-resp"><a routerLink="/third-engine" (click)="closeMenu()">Buscador</a></li>
+            <li class="menu-dropdown-resp"><a routerLink="/fourth-engine" (click)="closeMenu()">OCR</a></li>
           </ul>
         </li> <!-- drop -->
 
-        <li class="item"><a routerLink="/plans">Planos</a></li>
+        <li class="item"><a routerLink="/plans" (click)="closeMenu()">Planos</a></li>
 
-        <li class="item" id="login"><a routerLink="/login">Entre</a></li>
+        <li class="item" id="login"><a routerLink="/login" (click)="closeMenu()">Entre</a></li>
       </ul> <!-- list -->
 
     </nav>

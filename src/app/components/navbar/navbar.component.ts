@@ -8,13 +8,8 @@ import { Component, OnInit } from '@angular/core';
 
 
 export class NavbarComponent implements OnInit {
-  
 
- 
-  constructor() { 
-    this.toggleMenu();
-    this.toggleDropdown();
-  }
+  constructor() {}
 
   toggleMenu() {
     const nav = document.getElementById('navbar');
@@ -27,7 +22,7 @@ export class NavbarComponent implements OnInit {
     nav?.classList.toggle('drop');
   }
 
-  clickedOutside(){
+  closeMenu(){
     const nav = document.getElementById('navbar');
     nav?.classList.remove('drop');
     nav?.classList.remove('active');
