@@ -4,24 +4,9 @@
   font-family: 'Poppins', sans-serif;
   color: #fff;
 }
-
 img{
-  width: 70%;
+  width: 100%;
 }
-
-.main-illustration {
-  justify-self: center;
-}
-
-.main-illustration img{
-  padding-bottom: 25px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  width: 400px;
-}
-
 .container{
   display:grid;
   grid-template-areas: "main-title main-title"
@@ -31,19 +16,18 @@ img{
   margin-left: 10%;
   margin-right: 10%;
   height: 85vh;
-  grid-column-gap: 5%;
+  grid-gap: 5%;
 }
 .main-title{
   grid-area: main-title;
   justify-self: center;
-  padding-top: 10%;
+  margin-top: 10%;
 }
 .main-title h1{
   font-size: 45px;
 }
 .main-content{
   grid-area: main-content;
-  align-self: center;
 }
 .second-container{
   grid-area: second-container;
@@ -93,15 +77,21 @@ span{
   grid-area: footer;
   padding-top: 200px;
 }
-
+@media only screen and (max-width: 1025px){
+  .main-title{
+    margin-top: 20%;
+  }
+}
 @media only screen and (max-width: 799px){
   .container{
       grid-template-areas: "main-title"
                            "second-container"
-                           "main-content"
-                           "footer";
+                           "main-content";
       grid-template-columns: 1fr;
       padding-top: 15%;
+  }
+  .main-title{
+    margin-top: 10%;
   }
   .main-title h1{
       font-size: 32px;
@@ -124,11 +114,5 @@ span{
   }
   .txt-or{
       margin-top: 15%;
-  }
-}
-
-@media only screen and (max-width: 700px){
-  .main-illustration img{
-    padding-bottom: 25px;
   }
 }
