@@ -8,4 +8,9 @@ import { Component, Input } from '@angular/core';
 export class AppComponent {
   User = "Bacalhau";
   title = 'Angular_teste';
+
+  onAcitvate(event:any){
+    window.scroll(0,0);
+  }
 }
+
