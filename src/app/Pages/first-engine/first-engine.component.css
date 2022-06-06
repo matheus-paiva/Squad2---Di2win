@@ -3,11 +3,11 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     color: #fff;
-}
-img{
+  }
+  img{
     width: 100%;
-}
-.container{
+  }
+  .container{
     display:grid;
     grid-template-areas: "main-title main-title"
                          "main-content second-container"
@@ -17,42 +17,42 @@ img{
     margin-right: 10%;
     height: 85vh;
     grid-gap: 5%;
-}
-.main-title{
+  }
+  .main-title{
     grid-area: main-title;
     justify-self: center;
-    padding-top: 10%;
-}
-.main-title h1{
+    margin-top: 10%;
+  }
+  .main-title h1{
     font-size: 45px;
-}
-.main-content{
+  }
+  .main-content{
     grid-area: main-content;
-}
-.second-container{
+  }
+  .second-container{
     grid-area: second-container;
     display: grid;
     grid-template-areas: "main-illustration main-illustration main-illustration"
                          "btn-test txt-or btn-buy";
     grid-template-columns: 2fr 1fr 2fr;
-}
-.main-illustration{
+  }
+  .main-illustration{
     grid-area: main-illustration;
-}
-.btn-test{
+  }
+  .btn-test{
     grid-area: btn-test;
     align-self: center;
-}
-.txt-or{
+  }
+  .txt-or{
     grid-area: txt-or;
     justify-self: center;
     align-self: center;
-}
-.btn-buy{
+  }
+  .btn-buy{
     grid-area: btn-buy;
     align-self: center;
-}
-.btn{
+  }
+  .btn{
     text-align: center;
     text-decoration: none;
     color: #fff;
@@ -65,25 +65,33 @@ img{
     background: #cf006b;
     border-radius: 5px;
     cursor: pointer;
-}
-.btn:hover{
+  }
+  .btn:hover{
     background: #a00053;
-}
-span{
+  }
+  span{
     font-size: 26px;
-}
-
-.footer{
+  }
+  
+  .footer{
     grid-area: footer;
     padding-top: 200px;
   }
-@media only screen and (max-width: 799px){
+  @media only screen and (max-width: 1025px){
+    .main-title{
+      margin-top: 20%;
+    }
+  }
+  @media only screen and (max-width: 799px){
     .container{
         grid-template-areas: "main-title"
                              "second-container"
                              "main-content";
         grid-template-columns: 1fr;
         padding-top: 15%;
+    }
+    .main-title{
+      margin-top: 10%;
     }
     .main-title h1{
         font-size: 32px;
@@ -94,9 +102,9 @@ span{
     .main-illustration{
         margin-top: 10%;
     }
-
-}
-@media only screen and (max-width: 369px){
+  
+  }
+  @media only screen and (max-width: 369px){
     .btn{
         padding: 6px 6px;
         margin-top: 15%;
@@ -107,4 +115,4 @@ span{
     .txt-or{
         margin-top: 15%;
     }
-}
+  }
