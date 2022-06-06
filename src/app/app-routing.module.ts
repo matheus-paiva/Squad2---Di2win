@@ -59,7 +59,8 @@ const routes: Routes = [
     
     {path:'usernamerecovery',
     loadChildren: () => 
-    import('./Pages/auth/usernamerecovery/usernamerecovery.module').then((m) => m.UsernamerecoveryModule),
+    import('./Pages/auth/usernamerecovery/usernamerecovery.module').then((m) => m.UsernamerecoveryModule
+    ),
     },  
     
     {path:'**', component: PageNotFoundComponent},
