@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as Aos from 'aos';
 
 @Component({
   selector: 'app-first-engine',
@@ -13,6 +14,7 @@ export class FirstEngineComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    Aos.init();
   }
 
 }
