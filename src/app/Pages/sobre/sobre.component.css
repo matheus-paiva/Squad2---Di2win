@@ -171,7 +171,7 @@ img{
   }
   .contact{
     grid-area: contact;
-    margin-top: 105%;
+    margin-top: 10%;
   }
 }
 @media only screen and (max-width: 398px){
@@ -209,6 +209,6 @@ img{
     justify-self: center;
   }
   .contact{
-    margin-top: 135%;
+    margin-top: 20%;
   }
 }
