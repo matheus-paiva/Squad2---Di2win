@@ -129,6 +129,14 @@ input[type=tel]{
   width: 100%;
 }
 
+.validation-error p{
+  color: #db1a2d;
+  margin-top: .4em;
+  font-size: 13px;
+  padding-left: 0.2em;
+  border-left: 3px solid #db1a2d;
+}
+
 @media only screen and (max-width: 960px){
   .form-box{
     width: 60%;

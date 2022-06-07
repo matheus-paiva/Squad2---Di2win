@@ -6,21 +6,41 @@
 
 <div class="container">
   <div class="form-box">
-    <form>
+    <form (ngSubmit)="submit()" [formGroup]="contactForm" #formDir="ngForm">
       <fieldset>
+
         <div class="input">
           <label for="nome">Nome*</label>
-          <input type="text" required id="nome" class="input-100">
+          <input type="text" required id="nome" class="input-100" formControlName="name">
+
+          <div *ngIf="name.invalid && (formDir.submitted || name.touched)" class="validation-error">
+            <p *ngIf="name.errors?.['required']">O nome deve ser preenchido.</p>
+            <p *ngIf="name.errors?.['pattern']">Apenas letras e espaços.</p>
+          </div>
+
         </div>
+
+
 
         <div class="input">
           <label for="email">Email*</label>
-          <input type="email" required id="email" class="input-100">
+          <input type="email" required id="email" class="input-100" formControlName="email" ngModel [email]="true">
+
+          <div *ngIf="email.invalid && (formDir.submitted || email.touched)" class="validation-error">
+            <p *ngIf="email.errors?.['required']">O e-mail deve ser preenchido.</p>
+            <p *ngIf="email.errors?.['email']">O e-mail é inválido.</p>
+          </div>
+
         </div>
 
         <div class="input">
           <label for="empresa">Empresa*</label>
-          <input type="text" required id="empresa" class="input-100">
+          <input type="text" required id="empresa" class="input-100" formControlName="empresa">
+
+          <div *ngIf="empresa.invalid && (formDir.submitted || empresa.touched)" class="validation-error">
+            <p *ngIf="empresa.errors?.['required']">O nome da empresa deve ser preenchido.</p>
+          </div>
+
         </div>
 
         <div class="checkbox">
@@ -63,12 +83,23 @@
 
         <div class="input">
           <label for="telefone">Telefone*</label>
-            <input type="tel" required>
+            <input type="tel" required formControlName="tel" placeholder="+00 (00) 00000-0000" mask='+00 (00) 00000-0000'>
+
+            <div *ngIf="tel.invalid && (formDir.submitted || tel.touched)" class="validation-error">
+              <p *ngIf="tel.errors?.['required']">O número do telefone deve ser preenchido.</p>
+              <p *ngIf="tel.errors?.['pattern']">Caracter inválido.</p>
+            </div>
+
         </div>
 
         <div class="input">
           <label for="mensagem">Mensagem*</label>
-          <textarea name="mensagem" id="mensagem" cols="50" rows="5"></textarea>
+          <textarea name="mensagem" id="mensagem" cols="50" rows="5" required formControlName="message"></textarea>
+
+          <div *ngIf="message.invalid && (formDir.submitted || message.touched)" class="validation-error">
+            <p *ngIf="message.errors?.['required']">Você deve escrever uma mensagem.</p>
+          </div>
+
         </div>
 
         <div class="policies">
