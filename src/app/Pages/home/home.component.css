@@ -29,6 +29,9 @@ img{
 .main-content p{
     padding-top: 5%;
     font-size: 16px;
+    text-align: center;
+    line-height: 23px;
+    letter-spacing: 0.3px;
 }
 .engines{
     display: grid;
@@ -166,7 +169,15 @@ img{
         grid-row-gap: 0%;
     }
     .main-title h1{
-        font-size: 45px;
+        font-size: 36px;
         padding-bottom: 10%;
+    }
+
+    .main-content p{
+        font-size: 14px;
+    }
+
+    .main-content{
+        margin-bottom: 80px;
     }
 }
