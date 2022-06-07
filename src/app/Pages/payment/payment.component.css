@@ -27,8 +27,8 @@ form{
 }
 
 form h2{
-  margin-top: 10%;
-  margin-bottom: 3%;
+  margin-top: 152px;
+  margin-bottom: 44px;
   font-size: 50px;
   font-weight: bold;
 }
@@ -125,12 +125,15 @@ input[name=nome-cartao]{
     font-size: 36px;
   }
 
+
+
 }
 
 @media only screen and (max-width: 400px){
 
   .box{
     width: 80%;
+    margin-bottom: 80px;
   }
 }
 
