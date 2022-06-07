@@ -62,7 +62,7 @@ img{
 }
 .footer{
   grid-area: footer;
-  margin-top: 210px;
+  margin-top: 400px;
 }
 
 @media only screen and (max-width: 1401px){
@@ -153,10 +153,9 @@ img{
   }
   .contact{
     margin-top: 55%;
+    margin-bottom: 400px;
   }
-  .footer{
-    margin-top: 0px;
-  }
+
 }
 @media only screen and (max-width: 470px){
   .about-us-container{
