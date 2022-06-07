@@ -173,6 +173,12 @@ img{
     grid-area: contact;
     margin-top: 10%;
   }
+  .first-content{
+    margin-left: 5%;
+  }
+  .second-content{
+    margin-left: 5%;
+  }
 }
 @media only screen and (max-width: 398px){
   .about-us-container{
