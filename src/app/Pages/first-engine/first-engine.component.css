@@ -10,7 +10,8 @@
   .container{
     display:grid;
     grid-template-areas: "main-title main-title"
-                         "main-content second-container"
+                         "main-content main-illustration"
+                         "nothing btns"
                          "footer footer";
     grid-template-columns: 1fr 1fr;
     margin-left: 10%;
@@ -28,12 +29,12 @@
   }
   .main-content{
     grid-area: main-content;
+    align-self: center;
   }
-  .second-container{
-    grid-area: second-container;
+  .btns{
+    grid-area: btns;
     display: grid;
-    grid-template-areas: "main-illustration main-illustration main-illustration"
-                         "btn-test txt-or btn-buy";
+    grid-template-areas:"btn-test txt-or btn-buy";
     grid-template-columns: 2fr 1fr 2fr;
   }
   .main-illustration{
