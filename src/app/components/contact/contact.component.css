@@ -13,6 +13,15 @@
   align-items: center;
 }
 
+.main-title h1{ 
+  text-align: center;
+  color: white;
+  font-size: 45px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  margin-bottom: 10%;
+}
+
 .input, .checkbox, .span, input[type=submit]{
   display: flex;
   flex-direction: column;
