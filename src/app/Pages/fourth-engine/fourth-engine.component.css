@@ -33,6 +33,10 @@ img{
   grid-area: main-content;
   align-self: center;
 }
+.main-content p {
+  line-height: 23px;
+  letter-spacing: 0.3px;
+}
 .btns{
   grid-area: btns;
   display: grid;
