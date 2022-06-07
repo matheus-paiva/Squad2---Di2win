@@ -122,7 +122,7 @@
 
             <div id="telefone">
               <label for="telefone">Telefone</label>
-              <input type="tel" required mask='+00 (00) 0 0000-0000 || +00 (00) 0000-0000' formControlName="tel">
+              <input type="tel" required mask='+00 (00) 0 0000-0000 || +00 (00) 0000-0000' placeholder="+00 (00) 0 0000-0000" formControlName="tel">
 
               <div *ngIf="tel.invalid && (formDir.submitted || tel.touched)" class="validation-error">
                 <p *ngIf="tel.errors?.['required']">O telefone deve ser preenchido.</p>
