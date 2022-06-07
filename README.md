@@ -60,6 +60,8 @@ Se ocorrer algum erro, coloque "--force" sem as aspas no final do comando e cont
 ## OUTROS
 Para a instalação do mask, use esse comando, pode acontecer alguma vulnerabilidade, mas não precisa usar audit fix ou --force como nos outros
 - npm install --save ngx-mask
+Para a instalação do aos, use esse comando, pode acontecer alguma vulnerabilidade, mas não precisa usar audit fix ou --force como nos outros
+- npm install aos --save
 
 
 
