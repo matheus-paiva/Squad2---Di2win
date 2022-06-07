@@ -208,10 +208,12 @@ img{
   }
   .first-content{
     margin: 2%;
+    margin-left: 5%;
     justify-self: center;
   }
   .second-content{
     margin: 2%;
+    margin-left: 5%;
     justify-self: center;
   }
   .contact{
