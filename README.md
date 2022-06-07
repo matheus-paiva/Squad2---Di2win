@@ -57,4 +57,9 @@ Se ocorrer algum erro, coloque "--force" sem as aspas no final do comando e cont
 - npm run commit
 - Depois disso, você também pode iniciar um commit com "git-cz" ou "cz" sem as aspas que funcionará.
 
+## OUTROS
+Para a instalação do mask, use esse comando, pode acontecer alguma vulnerabilidade, mas não precisa usar audit fix ou --force como nos outros
+- npm install --save ngx-mask
+
+
 
