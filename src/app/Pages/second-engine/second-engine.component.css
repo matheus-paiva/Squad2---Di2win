@@ -25,7 +25,9 @@ img{
   margin-top: 10%;
 }
 .main-title h1{
-  font-size: 45px;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 50px;
 }
 .main-content{
   grid-area: main-content;
@@ -83,13 +85,16 @@ span{
     margin-top: 20%;
   }
 }
-@media only screen and (max-width: 799px){
+@media only screen and (max-width: 804px){
   .container{
-      grid-template-areas: "main-title"
-                           "second-container"
-                           "main-content";
-      grid-template-columns: 1fr;
-      padding-top: 15%;
+    grid-template-areas: "main-title"
+                         "main-illustration"
+                         "nothing"
+                         "btns"
+                         "main-content"
+                         "footer";
+    grid-template-columns: 10fr;
+    padding-top: 15%;
   }
   .main-title{
     margin-top: 10%;
@@ -102,6 +107,14 @@ span{
   }
   .main-illustration{
       margin-top: 10%;
+  }
+
+  .main-title h1{
+    font-size: 36px;
+  }
+
+  .main-content p{
+    font-size: 14px;
   }
 
 }
