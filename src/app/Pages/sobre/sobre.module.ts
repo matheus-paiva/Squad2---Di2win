@@ -12,7 +12,7 @@ import { ContactComponent } from 'src/app/components/contact/contact.component';
   imports: [
     CommonModule,
     SobreRoutingModule,
-    SharedModule
+    SharedModule,
   ]
 })
 export class SobreModule { }

@@ -28,6 +28,7 @@
               "src/assets/engineicons"
             ],
             "styles": [
+              "node_modules/aos/dist/aos.css",
               "src/styles.css"
             ],
             "scripts": [
