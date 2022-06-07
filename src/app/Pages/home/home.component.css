@@ -60,6 +60,7 @@ img{
                          "engine-content";
     grid-template-columns: 1fr;
     height: 70%;
+
 }
 .engine-1:hover{
     box-shadow: 0 0 10px #e6589c, 0 0 15px #F063A6, 0 0 30px #f770b1;

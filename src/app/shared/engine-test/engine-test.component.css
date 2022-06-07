@@ -20,8 +20,9 @@
     grid-area: main-title;
 }
 .main-title h1{
-    font-size: 45px;
+    font-size: 50px;
     text-align: center;
+    font-weight: bold;
 }
 
 .file-input{
@@ -71,5 +72,9 @@ img{
     }
     .archive-upload{
         padding-bottom: 14%;
+    }
+
+    .main-title h1{
+        font-size: 36px;
     }
 }
