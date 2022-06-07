@@ -3,85 +3,116 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<div class="box">
-  <h1>Fale Conosco</h1>
-  <form action="">
-    <fieldset>
-      
-      <div class="input">
-          <label for="nome">Nome</label>
-          <input type="text" required id="nome">
-      </div><br>
 
-      <div class="input">
-        <label for="email">Email</label><br>
-        <input type="email" required id="email">
-      </div><br>
+<div class="container">
+  <div class="form-box">
+    <form (ngSubmit)="submit()" [formGroup]="contactForm" #formDir="ngForm">
+      <fieldset>
 
-      <div class="input">
-        <label for="empresa">Empresa</label><br>
-        <input type="text" required id="empresa">
-      </div><br>
+        <div class="input">
+          <label for="nome">Nome*</label>
+          <input type="text" required id="nome" class="input-100" formControlName="name">
 
-      <div class="checkbox">
-        <label for="cargo">Cargo</label><br>
-        <select name="cargo" id="cargo" required>
-          <option value="" selected disabled>Selecione</option>
-          <option value="analista">Analista</option>
-          <option value="assistente">Assistente</option>
-          <option value="ceo">CEO</option>
-          <option value="coordenador">Coordenador</option>
-          <option value="diretor">Diretor</option>
-          <option value="gerente">Gerente</option>
-          <option value="outro">Outro</option>
-        </select>
-      </div><br>
+          <div *ngIf="name.invalid && (formDir.submitted || name.touched)" class="validation-error">
+            <p *ngIf="name.errors?.['required']">O nome deve ser preenchido.</p>
+            <p *ngIf="name.errors?.['pattern']">Apenas letras e espaços.</p>
+          </div>
 
-      <div class="checkbox">
-        <label for="departamento">Departamento</label><br>
-        <select name="departamento" id="departamento" required>
-          <option value="" selected disabled>Selecione</option>
-          <option value="marketing">Marketing</option>
-          <option value="vendas">Vendas</option>
-          <option value="ti">TI</option>
-          <option value="compras">Compras</option>
-          <option value="outro">Outro</option>
-        </select>
-      </div><br>
+        </div>
 
-      <div class="checkbox">
-        <label for="num-de-funcionarios">Número de funcionários</label><br>
-        <select name="num-de-funcionarios" id="num-de-funcionarios" required>
-          <option value="" selected disabled>Selecione</option>
-          <option value="ate-20">Até 20</option>
-          <option value="20-50">Entre 20 e 50</option>
-          <option value="50-200">Entre 50 e 200</option>
-          <option value="200-1000">Entre 200 a 1000</option>
-          <option value="mais-de-1000">Mais de 1000</option>
-        </select>
-      </div><br>
 
-      <div id="telefone">
-        <label for="telefone">Telefone</label><br>
-        <select name="pais" id="pais"></select>
-        <input type="tel" required>
-      </div><br>
 
-      <div class="input">
-        <label for="mensagem">Mensagem</label><br>
-        <input type="text" id="input-mensagem" required>
-      </div><br>
+        <div class="input">
+          <label for="email">Email*</label>
+          <input type="email" required id="email" class="input-100" formControlName="email" ngModel [email]="true">
 
-      <div>
-        <input type="checkbox" class="termo" required><small class="termo">Eu concordo em receber comunicações.</small><br>
-      </div>
+          <div *ngIf="email.invalid && (formDir.submitted || email.touched)" class="validation-error">
+            <p *ngIf="email.errors?.['required']">O e-mail deve ser preenchido.</p>
+            <p *ngIf="email.errors?.['email']">O e-mail é inválido.</p>
+          </div>
 
-      <p id="politica-priv">Ao informar meus dados, eu concordo com a <a href="http://www.google.com" target="_blank">Política de Privacidade</a>.</p><br>
+        </div>
 
-      <input type="submit" id="btn-enviar" value="Enviar"><br>
+        <div class="input">
+          <label for="empresa">Empresa*</label>
+          <input type="text" required id="empresa" class="input-100" formControlName="empresa">
 
-      <span id="compromisso">Prometemos não utilizar suas informações de contato para enviar qualquer tipo de SPAM.</span><br>
+          <div *ngIf="empresa.invalid && (formDir.submitted || empresa.touched)" class="validation-error">
+            <p *ngIf="empresa.errors?.['required']">O nome da empresa deve ser preenchido.</p>
+          </div>
 
-    </fieldset>
-  </form>
+        </div>
+
+        <div class="checkbox">
+          <label for="cargo">Cargo*</label>
+          <select name="cargo" id="cargo" required class="input-100">
+            <option value="" selected disabled>Selecione</option>
+            <option value="analista">Analista</option>
+            <option value="assistente">Assistente</option>
+            <option value="ceo">CEO</option>
+            <option value="coordenador">Coordenador</option>
+            <option value="diretor">Diretor</option>
+            <option value="gerente">Gerente</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+
+        <div class="checkbox">
+          <label for="departamento">Departamento*</label>
+          <select name="departamento" id="departamento" required class="input-100">
+            <option value="" selected disabled>Selecione</option>
+            <option value="marketing">Marketing</option>
+            <option value="vendas">Vendas</option>
+            <option value="ti">TI</option>
+            <option value="compras">Compras</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+
+        <div class="checkbox">
+          <label for="num-de-funcionarios">Número de funcionários*</label>
+          <select name="num-de-funcionarios" id="num-de-funcionarios" required class="input-100">
+            <option value="" selected disabled>Selecione</option>
+            <option value="ate-20">Até 20</option>
+            <option value="20-50">Entre 20 e 50</option>
+            <option value="50-200">Entre 50 e 200</option>
+            <option value="200-1000">Entre 200 a 1000</option>
+            <option value="mais-de-1000">Mais de 1000</option>
+          </select>
+        </div>
+
+        <div class="input">
+          <label for="telefone">Telefone*</label>
+            <input type="tel" required formControlName="tel" placeholder="+00 (00) 00000-0000" mask='+00 (00) 00000-0000'>
+
+            <div *ngIf="tel.invalid && (formDir.submitted || tel.touched)" class="validation-error">
+              <p *ngIf="tel.errors?.['required']">O número do telefone deve ser preenchido.</p>
+              <p *ngIf="tel.errors?.['pattern']">Caracter inválido.</p>
+            </div>
+
+        </div>
+
+        <div class="input">
+          <label for="mensagem">Mensagem*</label>
+          <textarea name="mensagem" id="mensagem" cols="50" rows="5" required formControlName="message"></textarea>
+
+          <div *ngIf="message.invalid && (formDir.submitted || message.touched)" class="validation-error">
+            <p *ngIf="message.errors?.['required']">Você deve escrever uma mensagem.</p>
+          </div>
+
+        </div>
+
+        <div class="policies">
+          <input type="checkbox" class="checkbox" required> Eu concordo em receber comunicações.        
+        </div>
+        <p>Ao informar meus dados, eu concordo com a <a href="http://www.google.com" target="_blank">Política de Privacidade</a>.</p>
+
+        <input type="submit" value="Enviar">
+
+        <div class="span">
+          <span>Prometemos não utilizar suas informações de contato para enviar qualquer tipo de SPAM.</span>
+        </div>
+      </fieldset>
+    </form>
+  </div>
 </div>

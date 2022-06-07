@@ -6,6 +6,9 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { SobreComponent } from './sobre.component';
 import { ContactComponent } from 'src/app/components/contact/contact.component';
 
+import { NgxMaskModule } from 'ngx-mask';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [SobreComponent,ContactComponent],
@@ -13,6 +16,8 @@ import { ContactComponent } from 'src/app/components/contact/contact.component';
     CommonModule,
     SobreRoutingModule,
     SharedModule,
+    NgxMaskModule.forRoot(),
+    ReactiveFormsModule,
   ]
 })
 export class SobreModule { }

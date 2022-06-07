@@ -64,6 +64,7 @@ img{
   grid-area: footer;
   margin-top: 210px;
 }
+
 @media only screen and (max-width: 1401px){
   .about-us-container{
     justify-self: center;
@@ -113,8 +114,7 @@ img{
     margin-top: 5%;
   }
   .footer{
-    margin-top: 100%;
-    padding-top: 100%;
+    padding-top: 150px;
   }
 }
 @media only screen and (max-width: 1025px) {
