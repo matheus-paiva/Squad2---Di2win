@@ -38,6 +38,7 @@ img{
 .first-content{
   grid-area: first-content;
   align-self: center;
+  
 }
 .text-title{
   font-weight: bold;
@@ -52,6 +53,7 @@ img{
 .second-content{
   grid-area: second-content;
   align-self: center;
+  
 }
 .second-img{
   text-align: right;
@@ -63,6 +65,14 @@ img{
 .footer{
   grid-area: footer;
   margin-top: 400px;
+}
+.first-content p{
+  line-height: 23px;
+  letter-spacing: 0.3px;
+}
+.second-content p {
+  line-height: 23px;
+  letter-spacing: 0.3px;
 }
 
 @media only screen and (max-width: 1401px){
